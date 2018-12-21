@@ -1,0 +1,281 @@
+.sticky {
+	display: block;
+}
+.home-banner {
+	width: 100%;
+	height: 100vh;
+	background-color: $color-light-blue;
+	margin: 0;
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.faqrow {
+	width: auto;
+	overflow: hidden;
+	margin: 0 0 20px 0;	
+	background-color: rgba(255,255,255,.05);
+	border-radius: 10px;
+}
+.question {
+	width: auto;
+	float:left;
+	margin: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	cursor:pointer;	
+	line-height: 1.3;
+	position: relative;
+	padding: 0 0 0 20px ;
+}
+.question-image {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0px;
+	top: 3px;
+	background-image: url(images/faq.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+}
+.question-image.close {
+	background-position: -15px 0;	
+}
+.answer {
+	width: 100%;
+	float:left;
+	margin: 10px;
+	font-size: 14px;
+	line-height: 1.3;
+	padding: 0 0 0 40px;
+	display:none;
+}
+.plus-minus-toggle {
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    width: 21px;
+    left:-10px;
+    top:40%;
+    z-index:2;
+
+    &:before,
+    &:after {
+      background: #eee;
+      content: '';
+      height: 5px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 21px;
+      transition: transform 500ms ease;
+    }
+
+    &:after {
+      transform-origin: center;
+    }
+
+    &.collapsed {
+      &:after {
+        transform: rotate(90deg);
+
+      }
+
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+}
+/*
+
+	Homepage
+
+*/
+section.hero {
+	width: 100%;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	h2 {
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+	h3 {
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+}
+section.secondary-hero {
+	width: 100%;
+	clear: both;
+	padding: 50px 0;
+	background-color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	h2 {
+		font-size: 1.6rem;
+		color: $color-dark-blue;
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+	h3 {
+		font-size: 1.2rem;
+		color: $color-light-blue;
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+}
+section.about-what-we-do {
+	width: 100%;
+	float: left;
+	padding: 30px 0 50px 0;
+	.third {
+		padding: 0 .92308em;
+	}
+	.icon {
+		width: 60%;
+		margin: 0 auto 30px auto;
+	}
+	h2 {
+		width: 100%;
+		margin: 0 0 30px 0;
+		font-size: 1.2rem;
+	}
+	p {
+		width: 100%;
+		margin: 0 0 30px 0;
+		font-size: 1rem;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			font-size: .9rem;
+			font-weight: 600;
+		}
+	}
+}
+.about-journey {
+	width: 100%;
+	float: left;
+	.row {
+		width: 100%;
+		float: left;
+	}
+	h3 {
+
+	}
+	.two-third {
+		background-color: #efefef;
+		padding: 8.3333333%;
+	}
+}
+section.contact {
+	.contact1 {
+		color: $color-davy-grey;
+	}
+	.info {
+		margin: 0 0 30px 0;
+	}
+	.start {
+		text-align: center;
+	}
+}
+section.work {
+	width: 100%;
+	float: left;
+	a.third {
+		height: 300px;
+		overflow: hidden;
+		.cover {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+		}
+		.title {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			z-index: 11;
+			text-align: center;
+			background-color: $color-light-blue;
+			@include transition(all ease .3s);
+			h2 {
+				font-size: 1.3rem;
+				color: #fff;
+				margin: 0;
+			}
+		}
+		&:hover {
+			.title {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

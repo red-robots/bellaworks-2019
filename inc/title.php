@@ -1,0 +1,13 @@
+<?php 
+
+	$pDesc = get_field('');
+
+	if($pDesc == ''){$pDesc = 'A little about us.';}
+
+ ?>
+<header class="entry-header">
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<p class="page-description">
+		<?php echo $pDesc; ?>
+	</p>
+</header><!-- .entry-header -->

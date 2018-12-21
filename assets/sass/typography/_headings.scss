@@ -1,0 +1,68 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	position: relative;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.entry-content h1 {
+	font-size: 30px;
+}
+
+h1.title::after,
+h2.title::after,
+h3.title::after,
+h4.title::after,
+h5.title::after,
+h6.title::after
+{
+	display: block;
+    width: 34px;
+    height: 0;
+    border-bottom: 4px solid;
+    content: "";
+    margin-top: .74em;
+}
+footer.site-footer {
+	h3.title::after,
+	h4.title::after,
+	h5.title::after,
+	h6.title::after
+	{
+		display: block;
+	    height: 0;
+	    content: "";
+	    border-bottom: 3px solid rgba(255,255,255,0.3);
+	    width: 22px;
+	    margin-top: 1em;
+	}
+}
+header.entry-header {
+	width: 100%;
+	float: left;
+	color: $color-light-blue;
+	h1.entry-title {
+		font-size: .9rem;
+		font-weight: 700;
+	}
+	p.page-description {
+		font-size: 4rem;
+		font-weight: 700;
+	}
+	h1.single-title {
+		font-size: 2.5rem;
+
+		font-weight: 700;
+		color: $color-davy-grey;
+		text-transform: capitalize;
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+		}
+	}
+}
+
+
+
+
+
+

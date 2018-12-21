@@ -1,0 +1,21 @@
+$color__link : #0999F3;
+a {
+	
+	color: $color-light-blue;
+	text-decoration: none;
+	/*&:visited {
+		color: $color__link-visited;
+	}*/
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-dark-blue;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

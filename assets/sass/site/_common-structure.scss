@@ -1,0 +1,214 @@
+body {
+	font-family: futura-pt, sans-serif;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 90%;
+		padding: 0px;
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+#masthead {
+	padding: 50px 0;
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+/* Logo */
+.logo , h1.logo {
+	width: 200px;
+	// background-image: url(images/bellaworks.png);	
+	margin: 10px auto;
+	clear: none;
+	font-size: 1rem;
+	position: relative;
+	z-index: 50;
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+		float: left;
+		margin: 15px 0 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 200px;
+	display: block;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.button {
+	width: auto;
+	display: inline-block;
+	margin: 20px 0;
+	a {
+		display: block;
+		padding: 5px 30px;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: $color-light-blue;
+		color: #fff;
+	}
+}
+.post-content {
+	width: 100%;
+	float: left;
+	padding: 50px 0;
+}
+article.post {
+	width: 100%;
+	float: left;
+	font-size: 1.3rem;
+	color: $color-davy-grey;
+	@media screen and (min-width: $tabwidth) {
+		width: 66.66667%;
+		float: right;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+.single-extras {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 25%;
+	    float: left;
+	    margin-right: 8.33333%;
+	}
+}
+.site-footer {
+	width: 100%;
+	clear: both;
+	font-size: .9rem;
+	float: left;
+	color: rgba(#fff, .6);
+	line-height: 1.8;
+	h3 {
+		color: rgba(#fff, .6);
+		margin: 0 0 20px 0;
+	}
+	.footer-logo {
+		width: 150px;
+		opacity: .5;
+		margin: 0 0 30px 0;
+	}
+}
+.third {
+	width: 100%;
+	position: relative;
+	@media screen and (min-width: $tabwidth) {
+		width: 33.33333%;
+		float: left;
+	}
+}
+.two-third {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 66.666666666%;
+		float: left;
+	}
+}
+.third-pad {
+	padding: 8.33333%;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+}
+.half {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 50%;
+		float: left;
+	}
+}
+.half-pad {
+	padding: 8.33333%;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+}
+ul.nice-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		width: 100%;
+		margin: 5px 0;
+	}
+	a {
+		text-decoration: none;
+		color: rgba(#fff, .6);
+		&:hover {
+			color: rgba(#fff, 1);
+		}
+	}
+}
+ul.footer-social {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	list-style: none;
+	margin: 30px 0;
+	padding: 0;
+	font-size: 1.9rem;
+	li {
+		margin: 0 1.24615em 0 0;
+	}
+	a, i {
+		color: rgba(#fff, .4);
+		&:hover {
+			color: rgba(#fff, 1);
+		}
+	}
+}
+
+
+
+
+
+
+
