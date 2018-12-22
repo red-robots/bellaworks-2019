@@ -11,12 +11,22 @@ get_header(); ?>
 
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
-
+			<div class="wrapper">
 			<?php
+				while ( have_posts() ) : the_post(); 
+
+					get_template_part('inc/title');
+
+
+				endwhile; // End of the loop. 
+				?>
+			</div>
+			<?php 
+				
 				$wp_query = new WP_Query();
 				$wp_query->query(array(
 				'post_type'=>'post',
-				'posts_per_page' => 15
+				'posts_per_page' => 12
 			));
 				if ($wp_query->have_posts()) :  ?>
 				<section class="news">
@@ -24,7 +34,7 @@ get_header(); ?>
 
 					
 
-					<div class="third">
+					<div class="third js-blocks">
 						<div class="image">
 							<a href="<?php the_permalink(); ?>" >
 								<?php the_post_thumbnail(); ?>
@@ -32,11 +42,19 @@ get_header(); ?>
 						</div>
 						
 						<div class="content">
-							<h2>
+							<h2 class="js-titles">
 								<a href="<?php the_permalink(); ?>" >
 									<?php the_title(); ?>
 								</a>
 							</h2>
+							<footer class="post">
+								<div class="date">
+									<?php the_date(); ?>
+								</div>
+								<div class="category">
+									<?php the_category(); ?>
+								</div>
+							</footer>
 						</div>	
 					</div>
 						

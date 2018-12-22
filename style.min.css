@@ -1646,14 +1646,15 @@ button:focus{outline:0}
 body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both;position:relative;width:100%;text-transform:uppercase}
 .entry-content h1{font-size:30px}
-h1.title::after,h2.title::after,h3.title::after,h4.title::after,h5.title::after,h6.title::after{display:block;width:34px;height:0;border-bottom:4px solid;content:"";margin-top:.74em}
+h1.title::after,p.page-description::after,h2.title::after,h3.title::after,h4.title::after,h5.title::after,h6.title::after{display:block;width:10px;height:0;border-bottom:10px solid;content:"";margin-top:.64em}
 footer.site-footer h3.title::after,footer.site-footer h4.title::after,footer.site-footer h5.title::after,footer.site-footer h6.title::after{display:block;height:0;content:"";border-bottom:3px solid rgba(255,255,255,0.3);width:22px;margin-top:1em}
-header.entry-header{width:100%;float:left;color:#3689b4}
+header.entry-header{width:100%;float:left;color:#3689b4;line-height:1.1}
 header.entry-header h1.entry-title{font-size:.9rem;font-weight:700}
-header.entry-header p.page-description{font-size:4rem;font-weight:700}
-header.entry-header h1.single-title{font-size:2.5rem;font-weight:700;color:#4e5356;text-transform:capitalize}
-@media screen and (min-width:600px){header.entry-header h1.single-title{width:50%}
-}p{margin-bottom:1.5em}
+header.entry-header p.page-description{font-size:4rem;font-weight:700;margin:1.5rem 0 1.5rem}
+header.entry-header h1.single-title{color:#3689b4;font-size:4rem;font-weight:700;text-transform:capitalize}
+@media screen and (min-width:600px){header.entry-header h1.single-title{width:70%}
+}.date{color:rgba(96,110,117,0.6);font-weight:700;margin:0 0 10px 0;font-size:.9rem}
+p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
 blockquote{margin:0 1.5em}
 address{margin:0 0 1.5em}
@@ -1920,10 +1921,18 @@ ul.nice-list{margin:0;padding:0;list-style-type:none}
 ul.nice-list li{width:100%;margin:5px 0}
 ul.nice-list a{text-decoration:none;color:rgba(255,255,255,0.6)}
 ul.nice-list a:hover{color:white}
-ul.footer-social{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;list-style:none;margin:30px 0;padding:0;font-size:1.9rem}
+ul.footer-social,ul.side-social{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;list-style:none;padding:0;font-size:1.9rem}
+ul.footer-social li,ul.side-social li{margin:0 1.24615em 0 0}
+ul.footer-social{margin:30px 0}
 ul.footer-social li{margin:0 1.24615em 0 0}
 ul.footer-social a,ul.footer-social i{color:rgba(255,255,255,0.4)}
 ul.footer-social a:hover,ul.footer-social i:hover{color:white}
+ul.side-social{margin:10px 0}
+ul.side-social li{margin:0 .8em 0 0}
+ul.side-social a,ul.side-social i{color:rgba(78,83,86,0.4)}
+ul.side-social a:hover,ul.side-social i:hover{color:#4e5356}
+.side-widget{width:100%;float:left;margin:0 0 40px 0}
+.side-widget h3{font-size:1rem}
 .sticky{display:block}
 .home-banner{width:100%;height:100vh;background-color:#3689b4;margin:0}
 .hentry{margin:0 0 1.5em}
@@ -1954,7 +1963,9 @@ section.about-what-we-do ul{margin:0;padding:0;list-style-type:none}
 section.about-what-we-do ul li{font-size:.9rem;font-weight:600}
 .about-journey{width:100%;float:left}
 .about-journey .row{width:100%;float:left}
-.about-journey .two-third{background-color:#efefef;padding:8.3333333%}
+.about-journey h3{text-transform:capitalize;font-size:1.6rem;color:#4e5356}
+.about-journey .two-third{background-color:#f2faff;padding:8.3333% 16.3333% 8.3333% 8.3333%}
+.about-journey p.title{text-transform:uppercase;font-weight:700;color:#3689b4}
 section.contact .contact1{color:#4e5356}
 section.contact .info{margin:0 0 30px 0}
 section.contact .start{text-align:center}
@@ -1969,9 +1980,22 @@ section.news .third{padding:4%}
 section.news .third .image{width:100%;overflow:hidden}
 section.news .third .image img{width:100%;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all ease .07s;transition:all ease .07s}
 section.news .third .image:hover img{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
-section.news .third .content{width:100%;padding:20px 0}
+section.news .third .content{width:100%;padding:20px 0;float:left}
 section.news .third .content h2{font-size:1.3rem;text-transform:capitalize}
 section.news .third .content h2 a{color:#4e5356}
+section.news .third .content footer.post{width:100%;position:relative;float:left;padding:40px 0 0 0;border-bottom:5px solid rgba(78,83,86,0.05)}
+section.news .third .content footer.post .date{width:auto;float:left;margin:0}
+section.news .third .content footer.post .category{width:auto;float:right}
+section.news .third .content footer.post .category ul{width:auto;float:right;list-style-type:none;margin:0;padding:0}
+section.news .third .content footer.post .category li{margin:0;padding:0;display:inline-block}
+section.news .third .content footer.post .category a{padding:5px 10px;color:#fff;background-color:#4e5356;font-size:.8rem;text-transform:uppercase;font-weight:700}
+section.news .third .content footer.post .category a:hover{background-color:#3689b4}
+.featured-image{width:100%;margin:30px 0;float:left}
+.featured-image img{width:100%}
+section.our-clients{width:100%;text-align:center;color:#fff;background-color:#4e5356;float:left;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:40px 0}
+section.our-clients h3{margin:0 0 40px 0}
+section.our-clients .client{width:150px;margin:0 20px;opacity:.7}
+section.are-you-ready{width:100%;text-align:center;float:left;padding:40px 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

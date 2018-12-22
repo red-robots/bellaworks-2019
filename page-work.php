@@ -11,6 +11,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
+			<div class="wrapper">
+				<?php
+				while ( have_posts() ) : the_post(); 
+
+					get_template_part('inc/title');
+
+
+				endwhile; // End of the loop. 
+				?>
+			</div>
 
 			<?php
 				$wp_query = new WP_Query();
@@ -40,6 +50,28 @@ get_header(); ?>
 			<?php 
 			endif;
 			 ?>
+
+			 <section class="our-clients">
+			 	<h3>Some of our clients.</h3>
+			 	<?php 
+			 	// specific post ID you want to pull
+				$post = get_post(2325); 
+				setup_postdata( $post );
+
+					if( have_rows('clients') ) : while( have_rows('clients') ) : the_row();
+						$client = get_sub_field('client');
+					?>
+						<div class="client">
+							<img src="<?php echo $client['url']; ?>"  alt="<?php echo $client['alt']; ?>">
+						</div>
+					<?php 
+					endwhile;
+					endif;
+				wp_reset_postdata();
+				?>
+			 </section>	
+
+			 <?php get_template_part('template-parts/are-you-ready'); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

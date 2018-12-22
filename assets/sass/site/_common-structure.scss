@@ -185,16 +185,22 @@ ul.nice-list {
 		}
 	}
 }
-ul.footer-social {
+ul.footer-social, ul.side-social {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	list-style: none;
-	margin: 30px 0;
+	
 	padding: 0;
 	font-size: 1.9rem;
+	li {
+		margin: 0 1.24615em 0 0;
+	}
+}
+ul.footer-social {
+	margin: 30px 0;
 	li {
 		margin: 0 1.24615em 0 0;
 	}
@@ -204,6 +210,30 @@ ul.footer-social {
 			color: rgba(#fff, 1);
 		}
 	}
+}
+ul.side-social {
+	margin: 10px 0;
+	li {
+		margin: 0 0.8em 0 0;
+	}
+	a, i {
+		color: rgba($color-davy-grey, .4);
+		&:hover {
+			color: rgba($color-davy-grey, 1);
+		}
+	}
+}
+.side-widget {
+	width: 100%;
+	float: left;
+	margin: 0 0 40px 0;
+	h3 {
+		font-size: 1rem;
+		// margin: 0 0 15px 0;
+	}
+}
+section.social-side {
+	
 }
 
 

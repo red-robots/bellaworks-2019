@@ -1,6 +1,6 @@
 <?php 
 
-	$pDesc = get_field('');
+	$pDesc = get_field('sub_title');
 
 	if($pDesc == ''){$pDesc = 'A little about us.';}
 

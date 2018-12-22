@@ -10,18 +10,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1.title::after,
+p.page-description::after,
 h2.title::after,
 h3.title::after,
 h4.title::after,
 h5.title::after,
 h6.title::after
 {
-	display: block;
-    width: 34px;
+	// display: block;
+ //    width: 34px;
+ //    height: 0;
+ //    border-bottom: 4px solid;
+ //    content: "";
+ //    margin-top: .74em;
+     display: block;
+    width: 10px;
     height: 0;
-    border-bottom: 4px solid;
+    border-bottom: 10px solid;
     content: "";
-    margin-top: .74em;
+    margin-top: .64em;
 }
 footer.site-footer {
 	h3.title::after,
@@ -41,6 +48,7 @@ header.entry-header {
 	width: 100%;
 	float: left;
 	color: $color-light-blue;
+	line-height: 1.1;
 	h1.entry-title {
 		font-size: .9rem;
 		font-weight: 700;
@@ -48,17 +56,25 @@ header.entry-header {
 	p.page-description {
 		font-size: 4rem;
 		font-weight: 700;
+		margin: 1.5rem 0 1.5rem;
 	}
 	h1.single-title {
-		font-size: 2.5rem;
-
+		color: $color-light-blue;
+		font-size: 4rem;
 		font-weight: 700;
-		color: $color-davy-grey;
+		// font-size: 2.5rem;
+		// color: $color-davy-grey;
 		text-transform: capitalize;
 		@media screen and (min-width: $tabwidth) {
-			width: 50%;
+			width: 70%;
 		}
 	}
+}
+.date {
+	color: rgba($color-cadet, .6);
+	font-weight: 700;
+	margin: 0 0 10px 0;
+	font-size: .9rem;
 }
 
 

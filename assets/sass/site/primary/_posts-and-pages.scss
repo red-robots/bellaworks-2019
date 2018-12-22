@@ -213,11 +213,18 @@ section.about-what-we-do {
 		float: left;
 	}
 	h3 {
-
+		text-transform: capitalize;
+		font-size: 1.6rem;
+		color: $color-davy-grey;
 	}
 	.two-third {
-		background-color: #efefef;
-		padding: 8.3333333%;
+		background-color: $color-alice-blue;
+		padding: 8.3333% 16.3333% 8.3333% 8.3333%;
+	}
+	p.title {
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $color-light-blue;
 	}
 }
 section.contact {
@@ -294,6 +301,7 @@ section.news {
 		.content {
 			width: 100%;
 			padding: 20px 0;
+			float: left;
 			h2 {
 				font-size: 1.3rem;
 				text-transform: capitalize;
@@ -301,11 +309,83 @@ section.news {
 					color: $color-davy-grey;
 				}
 			}
+			footer.post {
+				width: 100%;
+				position: relative;
+				float: left;
+				padding: 40px 0 0 0;
+				border-bottom: 5px solid rgba($color-davy-grey, .05);
+				.date {
+					width: auto;
+					float: left;
+					margin: 0;
+				}
+				.category {
+					width: auto;
+					float: right;
+					ul {
+						width: auto;
+						float: right;
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+					}
+					li {
+						margin: 0;
+						padding: 0;
+						display: inline-block;
+					}
+					a {
+						padding: 5px 10px;
+						color: #fff;
+						background-color: rgba($color-davy-grey, 1);
+						font-size: .8rem;
+						text-transform: uppercase;
+						font-weight: 700;
+						&:hover {
+							background-color: $color-light-blue;
+						}
+					}
+				}
+			}
 
 		}
 	}
 }
-
+.featured-image {
+	width: 100%;
+	margin: 30px 0;
+	float: left;
+	img {
+		width: 100%;
+	}
+}
+section.our-clients {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: $color-davy-grey;
+	float: left;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 40px 0;
+	h3 {
+		margin: 0 0 40px 0;
+	}
+	.client {
+		width: 150px;
+		margin:0 20px;
+		opacity: .7;
+	}
+}
+section.are-you-ready {
+	width: 100%;
+	text-align: center;
+	float: left;
+	padding: 40px 0;
+}
 
 
 
