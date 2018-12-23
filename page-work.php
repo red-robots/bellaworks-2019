@@ -21,12 +21,23 @@ get_header(); ?>
 				endwhile; // End of the loop. 
 				?>
 			</div>
+			<div class="work-video">
+				<div class="embed-container">
+	            <?php 
+					// specific post ID you want to pull
+	                $post = get_post(36); 
+	                setup_postdata( $post );
+		 				the_field('our_work_video'); 
+	            	wp_reset_postdata();
+	            ?>
+	        	</div>
+        	</div>
 
 			<?php
 				$wp_query = new WP_Query();
 				$wp_query->query(array(
 				'post_type'=>'portfolio',
-				'posts_per_page' => 12
+				'posts_per_page' => 9
 			));
 				if ($wp_query->have_posts()) :  ?>
 				<section class="work">

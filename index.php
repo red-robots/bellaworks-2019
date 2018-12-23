@@ -26,18 +26,18 @@ get_header(); ?>
 
 
 			<section class="hero">
-				<h2>YOUR MOST AUDACIOUS VISION.</h2>
-				<h3>LET US AT IT.</h3>
+				<h2>Sed ut perspiciatis unde omnis.</h2>
+				<h3>Quis autem vel eum iure reprehenderit.</h3>
 			</section>
 
 			<section class="secondary-hero">
-				<h2>YOUR MOST AUDACIOUS VISION.</h2>
-				<h3>LET US AT IT.</h3>
+				<h2>Sed ut perspiciatis unde omnis.</h2>
+				<h3>Quis autem vel eum iure reprehenderit.</h3>
 			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

@@ -15,7 +15,11 @@
 
 	<footer id="colophon" class="site-footer color-davy-grey" role="contentinfo">
 		<div class="third third-pad color-davy-dark-grey  js-blocks">
-			
+			<h3>Are you ready?</h3>
+			<p>Let's help you grow your buisness.</p>
+			<div class="button">
+				<a href="<?php bloginfo('url'); ?>">I'm Ready.</a>
+			</div>
 		</div>
 		<div class="third third-pad js-blocks">
 			<h3 class="title">Our Services</h3>
@@ -24,20 +28,20 @@
 					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
+					<a href="<?php bloginfo('url'); ?>/web-design;">Web Development</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
+					<a href="<?php bloginfo('url'); ?>/web-design;">Search Engine Optimization (SEO)</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
+					<a href="<?php bloginfo('url'); ?>/web-design;">Branding &amp; Strategy</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
+					<a href="<?php bloginfo('url'); ?>/web-design;">Social</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 		<div class="third third-pad js-blocks">
@@ -45,7 +49,7 @@
 				<img src="<?php bloginfo('template_url'); ?>/images/bellaworks-white.png" alt="Bellaworks Web Design">
 			</div>
 			<section class="info">
-				Bellaworks Web Design<br>
+				<b>Bellaworks Web Design</b><br>
 				3120 North Davidson St, Unit 200<br>
 				Charlotte, North Carolina 28205<br>
 				<b>P</b> 704.375.0831<br>

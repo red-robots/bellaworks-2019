@@ -386,6 +386,17 @@ section.are-you-ready {
 	float: left;
 	padding: 40px 0;
 }
+.work-video {
+	width: 90%;
+	margin: 0 auto;
+	clear: both;
+	@media screen and (min-width: $tabwidth) {
+		width: 80%;
+	}
+	@media screen and (min-width: $tabwidth) {
+		width: 60%;
+	}
+}
 
 
 
