@@ -44,23 +44,27 @@ body {
 	}
 }
 #masthead {
-	padding: 50px 0;
+	padding: 5px 0;
 	margin: 0;
 	width: 100%;
 	float: left;
+	@media screen and (min-width: $deskwidth) {
+		padding: 50px 0;
+	}
 }
 /* Logo */
 .logo , h1.logo {
 	width: 200px;
 	// background-image: url(images/bellaworks.png);	
-	margin: 10px auto;
+	// margin: 10px auto;
 	clear: none;
+	float: left;
 	font-size: 1rem;
 	position: relative;
 	z-index: 50;
 	@media screen and (min-width: $tabwidth) {
 		width: 200px;
-		float: left;
+		
 		margin: 15px 0 0 0;
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -78,18 +82,109 @@ body {
 		/*width: 1200px;*/
 	}
 }
+// .button {
+// 	width: auto;
+// 	display: inline-block;
+// 	margin: 20px 0;
+// 	a {
+// 		display: block;
+// 		padding: 5px 30px;
+// 		text-align: center;
+// 		text-transform: uppercase;
+// 		background-color: $color-light-blue;
+// 		color: #fff;
+// 		&:hover {
+
+// 		}
+// 	}
+// }
 .button {
-	width: auto;
-	display: inline-block;
-	margin: 20px 0;
-	a {
-		display: block;
-		padding: 5px 30px;
-		text-align: center;
-		text-transform: uppercase;
-		background-color: $color-light-blue;
-		color: #fff;
-	}
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  margin: 20px 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  .learn-more {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include btn-transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $color-light-blue;
+      border-radius: 1.625rem;
+      .icon {
+        @include btn-transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $color-light-blue;
+        &.arrow {
+          @include btn-transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include btn-transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+      &.blue {
+      	color: $color-light-blue;
+      }
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+        background: $color-light-blue;
+        transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: #fff;
+      &.blue {
+      	color: #fff;
+      }
+    }
+  }
 }
 .post-content {
 	width: 100%;
@@ -111,9 +206,10 @@ article.post {
 }
 .single-extras {
 	width: 100%;
-	float: left;
+	text-align: center;
 	@media screen and (min-width: $tabwidth) {
 		width: 25%;
+		text-align: left;
 	    float: left;
 	    margin-right: 8.33333%;
 	}
@@ -132,15 +228,20 @@ article.post {
 	.footer-logo {
 		width: 150px;
 		opacity: .5;
-		margin: 0 0 30px 0;
+		margin: 0 auto 30px auto;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0 30px 0;
+		}
 	}
 }
 .third {
 	width: 100%;
 	position: relative;
+	text-align: center;
 	@media screen and (min-width: $tabwidth) {
 		width: 33.33333%;
 		float: left;
+		text-align: left;
 	}
 }
 .two-third {
@@ -158,6 +259,7 @@ article.post {
 }
 .half {
 	width: 100%;
+	float: left;
 	@media screen and (min-width: $tabwidth) {
 		width: 50%;
 		float: left;
@@ -190,20 +292,22 @@ ul.footer-social, ul.side-social {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
+	justify-content: center;
 	list-style: none;
-	
 	padding: 0;
 	font-size: 1.9rem;
+	@media screen and (min-width: $tabwidth) {
+		justify-content: flex-start;
+	}
 	li {
-		margin: 0 1.24615em 0 0;
+		margin: 0 0.5em;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 1.24615em 0 0;
+		}
 	}
 }
 ul.footer-social {
 	margin: 30px 0;
-	li {
-		margin: 0 1.24615em 0 0;
-	}
 	a, i {
 		color: rgba(#fff, .4);
 		&:hover {
@@ -214,7 +318,10 @@ ul.footer-social {
 ul.side-social {
 	margin: 10px 0;
 	li {
-		margin: 0 0.8em 0 0;
+		margin: 0 0.4em;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0.8em 0 0;
+		}
 	}
 	a, i {
 		color: rgba($color-davy-grey, .4);

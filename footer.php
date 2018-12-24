@@ -18,8 +18,16 @@
 			<h3>Are you ready?</h3>
 			<p>Let's help you grow your buisness.</p>
 			<div class="button">
-				<a href="<?php bloginfo('url'); ?>">I'm Ready.</a>
+				<div class="learn-more">
+				<a href="<?php bloginfo('url'); ?>">	
+					<div class="circle">
+				      <span class="icon arrow"></span>
+				    </div>
+					<p class="button-text">I'm Ready.</p>
+				</a>
+				</div>
 			</div>
+			
 		</div>
 		<div class="third third-pad js-blocks">
 			<h3 class="title">Our Services</h3>

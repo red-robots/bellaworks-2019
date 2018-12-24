@@ -23,7 +23,7 @@ h6.title::after
  //    border-bottom: 4px solid;
  //    content: "";
  //    margin-top: .74em;
-     display: block;
+    display: block;
     width: 10px;
     height: 0;
     border-bottom: 10px solid;
@@ -36,12 +36,15 @@ footer.site-footer {
 	h5.title::after,
 	h6.title::after
 	{
-		display: block;
+		display: none;
 	    height: 0;
 	    content: "";
 	    border-bottom: 3px solid rgba(255,255,255,0.3);
 	    width: 22px;
 	    margin-top: 1em;
+	    @media screen and (min-width: $tabwidth) {
+	    	display: block;
+	    }
 	}
 }
 header.entry-header {
@@ -54,19 +57,28 @@ header.entry-header {
 		font-weight: 700;
 	}
 	p.page-description {
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 700;
 		margin: 1.5rem 0 1.5rem;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 3rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 4rem;
+		}
 	}
 	h1.single-title {
-		color: $color-light-blue;
-		font-size: 4rem;
+		// color: $color-light-blue;
+		// font-size: 4rem;
 		font-weight: 700;
-		// font-size: 2.5rem;
-		// color: $color-davy-grey;
+		font-size: 2.5rem;
+		color: $color-davy-grey;
 		text-transform: capitalize;
 		@media screen and (min-width: $tabwidth) {
 			width: 70%;
+		}
+		@media screen and (min-width: $deskwidth) {
+
 		}
 	}
 }
@@ -75,6 +87,12 @@ header.entry-header {
 	font-weight: 700;
 	margin: 0 0 10px 0;
 	font-size: .9rem;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
 }
 
 

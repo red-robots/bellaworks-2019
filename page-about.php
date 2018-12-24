@@ -24,7 +24,7 @@ get_header(); ?>
 				<section class="about-what-we-do">
 					<div class="third">
 						<div class="icon">
-							
+							<img src="<?php bloginfo('template_url'); ?>/images/icon_mock5.png">	
 						</div>
 						<h2>Web Design</h2>
 						<p>
@@ -47,7 +47,7 @@ get_header(); ?>
 					</div>
 					<div class="third">
 						<div class="icon">
-							
+							<img src="<?php bloginfo('template_url'); ?>/images/icon_idea.png">
 						</div>
 						<h2>Branding &amp; Strategy</h2>
 						<p>
@@ -70,7 +70,7 @@ get_header(); ?>
 					</div>
 					<div class="third">
 						<div class="icon">
-							
+							<img src="<?php bloginfo('template_url'); ?>/images/icon_onlinecart.png">
 						</div>
 						<h2>Web Development</h2>
 						<p>
@@ -98,7 +98,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="third">
 						<div class="icon">
-							<img src="<?php  ?>">
+							<img src="<?php bloginfo('template_url'); ?>/images/icon_blurb.png">
 						</div>
 					</div>
 					<div class="two-third">
@@ -112,7 +112,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="third">
 						<div class="icon">
-							<img src="<?php  ?>">
+							<img src="<?php bloginfo('template_url'); ?>/images/icon_directions.png">
 						</div>
 					</div>
 					<div class="two-third">
@@ -127,7 +127,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="third">
 						<div class="icon">
-							<img src="<?php  ?>">
+							<img src="<?php bloginfo('template_url'); ?>/images/icon_network2.png">
 						</div>
 					</div>
 					<div class="two-third">

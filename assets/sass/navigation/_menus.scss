@@ -495,13 +495,28 @@ body {
 }
 /*  BURGER
 ========================================== */
-
+body.home {
+  .burger {
+    span {
+      @include burger(30px, 3px, 6px, #fff);
+    }
+     &.clicked {
+      span {
+        @include burger-to-cross;
+        
+        &:before, &:after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
 .burger {
   width: 50px;
   height: 50px;
   position: absolute;
   top: 0px;
-  left: 15px;
+  right: 15px;
   border-radius: 4px;
   z-index: 100002;
   @media screen and (min-width: $tabwidth) {
@@ -509,7 +524,7 @@ body {
   }
   
   span {
-    @include burger(30px, 3px, 6px, #fff); // gray
+    @include burger(30px, 3px, 6px, $color-light-blue); // gray
     position: absolute;
     top: 50%;
     left: 50%;

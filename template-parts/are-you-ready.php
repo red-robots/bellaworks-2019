@@ -1,6 +1,14 @@
 <section class="are-you-ready">
 	<h3>Are you ready?</h3>
 	<div class="button">
-		<a href="<?php bloginfo(); ?>">Let's do it.</a>
+	<div class="learn-more">
+		<a href="<?php bloginfo(); ?>">
+			<div class="circle">
+		      <span class="icon arrow"></span>
+		    </div>
+			<p class="button-text blue">Let's do it.</p>
+		</a>
+	</div>
+		
 	</div>	
 </section>	

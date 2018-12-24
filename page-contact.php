@@ -59,7 +59,15 @@ get_header(); ?>
 				<div class="half half-pad start">
 					<h3>Ready to start a project?</h3>
 					<div class="button">
-						<a href="<?php bloginfo('url'); ?>/get-started">Get Started</a>
+					<div class="learn-more">
+						<div class="circle">
+					      <span class="icon arrow"></span>
+					    </div>
+						<a href="<?php bloginfo('url'); ?>/get-started">
+						<p class="button-text blue">Get Started</p>
+						</a>
+					</div>
+						
 					</div>
 				</div>
 				

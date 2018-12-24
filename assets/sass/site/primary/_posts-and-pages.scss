@@ -6,6 +6,12 @@
 	height: 100vh;
 	background-color: $color-light-blue;
 	margin: 0;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
 }
 .hentry {
 	margin: 0 0 1.5em;
@@ -177,13 +183,29 @@ section.secondary-hero {
 section.about-what-we-do {
 	width: 100%;
 	float: left;
-	padding: 30px 0 50px 0;
+	padding: 30px 0 100px 0;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
 	.third {
 		padding: 0 .92308em;
+		margin: 0 0 50px 0;
 	}
 	.icon {
-		width: 60%;
-		margin: 0 auto 30px auto;
+		width: 40%;
+    	margin: 0 auto 80px auto;
+    	@media screen and (min-width: $tabwidth) {
+    		width: 30%;
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+		img {
+			width: 100%;
+		}
 	}
 	h2 {
 		width: 100%;
@@ -208,14 +230,32 @@ section.about-what-we-do {
 .about-journey {
 	width: 100%;
 	float: left;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
 	.row {
 		width: 100%;
 		float: left;
+		@media screen and (min-width: $tabwidth) {
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			justify-content: align-start;
+		}
 	}
 	h3 {
 		text-transform: capitalize;
 		font-size: 1.6rem;
 		color: $color-davy-grey;
+	}
+	.third {
+		// width: 100%;
+		@media screen and (min-width: $tabwidth) {
+
+		}
 	}
 	.two-third {
 		background-color: $color-alice-blue;
@@ -225,6 +265,25 @@ section.about-what-we-do {
 		text-transform: uppercase;
 		font-weight: 700;
 		color: $color-light-blue;
+	}
+	.icon {
+		width: 40%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 30px 0;
+		@media screen and (min-width: $tabwidth) {
+			padding: 0;
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+		img {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 }
 section.contact {
@@ -241,9 +300,34 @@ section.contact {
 section.work {
 	width: 100%;
 	float: left;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
 	a.third {
-		height: 300px;
+		height: 250px;
 		overflow: hidden;
+		display: block;
+		@media screen and (min-width: $tabwidth) {
+			height: 140px;
+		}
+		@media screen and (min-width: $midwidth) {
+			height: 200px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			height: 280px;
+		}
+		@media screen and (min-width: $largewidth) {
+			height: 340px;
+		}
+		@media screen and (min-width: $xlargewidth) {
+			height: 400px;
+		}
+		@media screen and (min-width: $xxlargewidth) {
+			height: 460px;
+		}
 		.cover {
 			width: 100%;
 			height: 100%;
@@ -378,6 +462,12 @@ section.our-clients {
 		width: 150px;
 		margin:0 20px;
 		opacity: .7;
+		@media screen and (min-width: $tabwidth) {
+
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
 	}
 }
 section.are-you-ready {
