@@ -51,6 +51,17 @@
 					<?php get_template_part('inc/nav'); ?>
 				</div><!-- wrapper -->
 			</header><!-- #masthead -->
+			<div class="wrapper ">
+				<div class="home-flex">
+					<section class="hero">
+						<h2>Sed ut perspiciatis unde omnis.</h2>
+						<h3>Quis autem vel eum iure reprehenderit.</h3>
+					</section>
+					<section class="image">
+						<img src="<?php bloginfo('template_url'); ?>/images/home-placeholder.png">
+					</section>
+				</div>
+			</div>
 		</div>
 	<?php } else { ?>
 		<header id="masthead" class="site-header" role="banner">
@@ -62,6 +73,7 @@
 	            </div>
 	    		<?php get_template_part('inc/nav'); ?>
 			</div><!-- wrapper -->
+			
 		</header><!-- #masthead -->
 
 			

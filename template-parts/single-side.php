@@ -12,12 +12,12 @@
 					</a>
 				</li>
 				<li>
-					<a href="https://www.pinterest.com/bellaworksweb/pins/">
+					<a href="https://twitter.com/intent/tweet?url=<?php echo $url; ?>">
 						<i class="fab fa-twitter-square"></i>
 					</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/company/1060900">
+					<a href="https://www.linkedin.com/shareArticle?url=<?php echo $url; ?>">
 						<i class="fab fa-linkedin"></i>
 					</a>
 				</li>

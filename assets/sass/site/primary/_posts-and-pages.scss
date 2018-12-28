@@ -118,24 +118,49 @@
 	Homepage
 
 */
+.home-flex {
+	display: flex;
+	width: 100%;
+	float: left;
+	flex-direction: column;
+	padding: 50px 0 50px 0;
+	@media screen and (min-width: $tabwidth) {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0;
+	}
+	section.image {
+		width: 100%;
+		position: relative;
+		@media screen and (min-width: $tabwidth) {
+			width: 45%;
+		}
+	}
+	
+}
 section.hero {
 	width: 100%;
-
+	color: #fff;
 	@media screen and (min-width: $tabwidth) {
-		
+		width: 45%;
 	}
 	@media screen and (min-width: $deskwidth) {
 		
 	}
 	h2 {
+		font-size: 3rem;
+		line-height: 1;
 		@media screen and (min-width: $tabwidth) {
-		
+			font-size: 4rem;
 		}
 		@media screen and (min-width: $deskwidth) {
-			
+			font-size: 5rem;
 		}
 	}
 	h3 {
+		text-transform: capitalize;
+		font-size: 2rem;
 		@media screen and (min-width: $tabwidth) {
 		
 		}
@@ -144,6 +169,7 @@ section.hero {
 		}
 	}
 }
+
 section.secondary-hero {
 	width: 100%;
 	clear: both;
@@ -283,6 +309,78 @@ section.about-what-we-do {
 		img {
 			width: 100%;
 			margin: 0 auto;
+		}
+	}
+}
+section.our-staff {
+	width: 100%;
+	position: relative;
+	float: left;
+	padding: 50px 0;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+	.flex {
+		@media screen and (min-width: $tabwidth) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
+	.person {
+		width: 90%;
+		padding: 3%;
+		margin: 0 0 30px 0;
+		@media screen and (min-width: $tabwidth) {
+			width: 26%;
+			overflow: hidden;
+
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+		&:hover {
+			.robot {
+				opacity: 0;
+			}
+		}
+		.pic {
+			width: 100%;
+			position: relative;
+			float: left;
+
+			.robot, .real {
+				width: 100%;
+				
+				img {
+					width: 100%;
+					float: left;
+				}
+			}
+			.robot {
+				filter: grayscale(1);
+				z-index: 1;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				@include transition(all ease .2s);
+			}
+			.real {
+				z-index: 2;
+			}
+		}
+		.info {
+			width: 100%;
+			h3 {
+
+			}
+			.superpower {
+
+			}
 		}
 	}
 }
@@ -485,6 +583,79 @@ section.are-you-ready {
 	}
 	@media screen and (min-width: $tabwidth) {
 		width: 60%;
+	}
+}
+section.services {
+	width: 100%;
+	float: left;
+	position: relative;
+	color: #fff;
+	
+	@media screen and (min-width: $tabwidth) {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: stretch;
+	}
+	&::before {
+		@media screen and (min-width: $tabwidth) {
+			position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 33.33333%;
+		    display: block;
+		    width: 33.33333%;
+		    background-color: $color-light-blue-dark;
+		    content: "";
+		}
+	}
+	h2.home-service {
+		width: auto;
+		float: left;
+		margin-left: 8.33333%;
+    	padding-top: 6%;
+	}
+	.third {
+		margin: -4% 0 0 0;
+	}
+	.service-wrap {
+		width: 100%;
+		float: left;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		line-height: 1.45;
+		@media screen and (min-width: $tabwidth) {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: stretch;
+		}
+	}
+	ul {
+		margin: 10px 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		margin: 0px 0;
+		padding: 0px 0;
+	}
+	a {
+		color: #fff;
+		// border-left: 3px solid #fff;
+		padding: 0 0 0 3px ;
+		&:hover {
+			color: rgba(#fff, .5);
+		}
+	}
+	h3 {
+		font-size: 0.85rem;
+	}
+	.info {
+		font-size: 1.05rem;
+		padding: 0 0 8px 0;
+		border-bottom: 1px solid rgba(#fff, .2);
 	}
 }
 

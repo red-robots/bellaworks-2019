@@ -4,7 +4,37 @@
 add_action('init', 'js_custom_init');
 function js_custom_init() 
 {
+    // Staff
+    $labels = array(
+  'name' => _x('Services', 'post type general name'),
+    'singular_name' => _x('Service', 'post type singular name'),
+    'add_new' => _x('Add New', 'Service'),
+    'add_new_item' => __('Add New Service'),
+    'edit_item' => __('Edit Service'),
+    'new_item' => __('New Service'),
+    'view_item' => __('View Service'),
+    'search_items' => __('Search Service'),
+    'not_found' =>  __('No Service found'),
+    'not_found_in_trash' => __('No Service found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Service'
+  );
+  $args = array(
+  'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','excerpt'),
   
+  ); 
+  register_post_type('service',$args); // name used in query
   // Register the Homepage Slides
   
      $labels = array(
@@ -116,6 +146,18 @@ function js_custom_init()
 add_action( 'init', 'build_taxonomies', 0 );
  
 function build_taxonomies() {
+   register_taxonomy( 'service_type', 'service',
+   array( 
+    'hierarchical' => true, // true = acts like categories false = acts like tags
+    'label' => 'Service Type', 
+    'query_var' => true, 
+    'rewrite' => true ,
+    'show_admin_column' => true,
+    'public' => true,
+    'rewrite' => array( 'slug' => 'service-type' ),
+    '_builtin' => true
+  ) );
+
 // cusotm tax
     register_taxonomy( 'categorized', 'portfolio',
    array( 

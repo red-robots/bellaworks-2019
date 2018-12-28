@@ -21,6 +21,7 @@ $color__border-abbr: #666;
 
 $color-black: #000;
 $color-light-blue: #3689b4;
+$color-oliver-purple: #8988BF;
 $color-dark-blue: #002c4c;
 $color-light-brown: #362d1b;
 $color-dark-brown: #302614;
@@ -29,6 +30,7 @@ $color-davy-dark-grey: #44484a;
 $color-cadet: #606E75;
 $color-alice-blue: #F2FAFF;
 $color-azu-white: #CDE7F4;
+$color-light-blue-dark: #337fa7;
 
 
 
@@ -40,7 +42,7 @@ $color-azu-white: #CDE7F4;
 	background-color: $color-dark-brown;
 }
 .color-light-blue {
-	background-color: rgba($color-light-blue, .3);
+	background-color: rgba($color-light-blue, 1);
 }
 .color-davy-grey {
 	background-color: rgba($color-davy-grey, 1);
@@ -53,4 +55,7 @@ $color-azu-white: #CDE7F4;
 }
 .azu-white {
 	background-color: $color-azu-white;
+}
+.color-light-blue-dark {
+	background-color: $color-light-blue-dark
 }

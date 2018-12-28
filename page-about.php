@@ -140,6 +140,50 @@ get_header(); ?>
 				</div>
 			</section>
 
+			<?php
+				$wp_query = new WP_Query();
+				$wp_query->query(array(
+				'post_type'=>'staff',
+				'posts_per_page' => -1
+				
+			));
+			if ($wp_query->have_posts()) : ?>
+				<section class="our-staff">
+					<div class="wrapper flex">
+					<h2>Our <strike>Robots</strike> Staff</h2>
+					<?php while ($wp_query->have_posts()) : $wp_query->the_post();
+
+						$superpower = get_field('superpower');
+						$imgRobot = get_field('image_robot');
+						$imgReal = get_field('photo');
+
+					 ?>
+
+					 	<div class="person">
+					 		<div class="pic">
+					 			<div class="robot">
+					 				<img src="<?php echo $imgReal['url']; ?>"  alt="<?php echo $imgReal['alt']; ?>">
+					 			</div>
+					 			<div class="real">
+					 				<img src="<?php echo $imgReal['url']; ?>"  alt="<?php echo $imgReal['alt']; ?>">
+					 			</div>
+					 		</div>
+					 		<div class="info">
+					 			<h3><?php the_title(); ?></h3>
+					 			<?php if( $superpower ) { ?>
+						 			<div class="superpower">
+						 				<span class="superpower">Superpower</span>
+						 				<?php echo $superpower; ?>
+						 			</div>
+					 			<?php } ?>
+					 		</div>
+					 	</div>
+
+					<?php endwhile; ?>
+					</div>
+				</section>
+			<?php endif; ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

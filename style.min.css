@@ -20,11 +20,12 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */.color-light-brown{background-color:#362d1b}
 .color-dark-brown{background-color:#302614}
-.color-light-blue{background-color:rgba(54,137,180,0.3)}
+.color-light-blue{background-color:#3689b4}
 .color-davy-grey{background-color:#4e5356}
 .color-davy-dark-grey{background-color:#44484a}
 .color-cadet{background-color:#606e75}
 .azu-white{background-color:#cde7f4}
+.color-light-blue-dark{background-color:#337fa7}
 @font-face{font-family:'FuturaPT-Light';src:url("fonts/2E4E03_0_0.eot");src:url("fonts/2E4E03_0_0.eot?#iefix") format("embedded-opentype"),url("fonts/2E4E03_0_0.woff2") format("woff2"),url("fonts/2E4E03_0_0.woff") format("woff"),url("fonts/2E4E03_0_0.ttf") format("truetype")}
 @font-face{font-family:'NeutraTextBookAlt';src:url("fonts/NeutraText-BookAlt.eot");src:url("fonts/NeutraText-BookAlt.eot?#iefix") format("embedded-opentype"),url("fonts/NeutraText-BookAlt.woff") format("woff"),url("fonts/NeutraText-BookAlt.ttf") format("truetype"),url("fonts/NeutraText-BookAlt.svg#NeutraText-BookAlt") format("svg");font-style:normal;font-weight:normal;text-rendering:optimizeLegibility}
 @font-face{font-family:'NeutraTextLightAlt';src:url("fonts/NeutraText-LightAlt.eot");src:url("fonts/NeutraText-LightAlt.eot?#iefix") format("embedded-opentype"),url("fonts/NeutraText-LightAlt.woff") format("woff"),url("fonts/NeutraText-LightAlt.ttf") format("truetype"),url("fonts/NeutraText-LightAlt.svg#NeutraText-LightAlt") format("svg");font-style:normal;font-weight:normal;text-rendering:optimizeLegibility}
@@ -1976,7 +1977,16 @@ ul.side-social a:hover,ul.side-social i:hover{color:#4e5356}
 .plus-minus-toggle:after{-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center}
 .plus-minus-toggle.collapsed:after{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .plus-minus-toggle.collapsed:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
-section.hero{width:100%}
+.home-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;float:left;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:50px 0 50px 0}
+@media screen and (min-width:600px){.home-flex{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:0}
+}.home-flex section.image{width:100%;position:relative}
+@media screen and (min-width:600px){.home-flex section.image{width:45%}
+}section.hero{width:100%;color:#fff}
+@media screen and (min-width:600px){section.hero{width:45%}
+}section.hero h2{font-size:3rem;line-height:1}
+@media screen and (min-width:600px){section.hero h2{font-size:4rem}
+}@media screen and (min-width:1200px){section.hero h2{font-size:5rem}
+}section.hero h3{text-transform:capitalize;font-size:2rem}
 section.secondary-hero{width:100%;clear:both;padding:50px 0;background-color:#fff;text-align:center;text-transform:uppercase;font-family:futura-pt,sans-serif;font-weight:700}
 section.secondary-hero h2{font-size:1.6rem;color:#002c4c}
 section.secondary-hero h3{font-size:1.2rem;color:#3689b4}
@@ -1998,6 +2008,17 @@ section.about-what-we-do ul li{font-size:.9rem;font-weight:600}
 .about-journey .icon{width:40%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0 auto;padding:30px 0}
 @media screen and (min-width:600px){.about-journey .icon{padding:0}
 }.about-journey .icon img{width:100%;margin:0 auto}
+section.our-staff{width:100%;position:relative;float:left;padding:50px 0}
+@media screen and (min-width:600px){section.our-staff .flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
+}section.our-staff .person{width:90%;padding:3%;margin:0 0 30px 0}
+@media screen and (min-width:600px){section.our-staff .person{width:26%;overflow:hidden}
+}section.our-staff .person:hover .robot{opacity:0}
+section.our-staff .person .pic{width:100%;position:relative;float:left}
+section.our-staff .person .pic .robot,section.our-staff .person .pic .real{width:100%}
+section.our-staff .person .pic .robot img,section.our-staff .person .pic .real img{width:100%;float:left}
+section.our-staff .person .pic .robot{-webkit-filter:grayscale(1);filter:grayscale(1);z-index:1;position:absolute;bottom:0;left:0;-webkit-transition:all ease .2s;transition:all ease .2s}
+section.our-staff .person .pic .real{z-index:2}
+section.our-staff .person .info{width:100%}
 section.contact .contact1{color:#4e5356}
 section.contact .info{margin:0 0 30px 0}
 section.contact .start{text-align:center}
@@ -2037,7 +2058,20 @@ section.are-you-ready{width:100%;text-align:center;float:left;padding:40px 0}
 .work-video{width:90%;margin:0 auto;clear:both}
 @media screen and (min-width:600px){.work-video{width:80%}
 }@media screen and (min-width:600px){.work-video{width:60%}
-}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+}section.services{width:100%;float:left;position:relative;color:#fff}
+@media screen and (min-width:600px){section.services{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}
+}@media screen and (min-width:600px){section.services::before{position:absolute;top:0;bottom:0;left:33.33333%;display:block;width:33.33333%;background-color:#337fa7;content:""}
+}section.services h2.home-service{width:auto;float:left;margin-left:8.33333%;padding-top:6%}
+section.services .third{margin:-4% 0 0 0}
+section.services .service-wrap{width:100%;float:left;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;line-height:1.45}
+@media screen and (min-width:600px){section.services .service-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}
+}section.services ul{margin:10px 0;padding:0;list-style:none}
+section.services li{margin:0;padding:0}
+section.services a{color:#fff;padding:0 0 0 3px}
+section.services a:hover{color:rgba(255,255,255,0.5)}
+section.services h3{font-size:.85rem}
+section.services .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1px solid rgba(255,255,255,0.2)}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
