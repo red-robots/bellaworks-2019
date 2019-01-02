@@ -28,12 +28,12 @@
 		<div class="cta">
 			<h3>Ready to start your project?</h3>
 			<div class="button">
-				<div class="learn-more">
+				<div class="action">
 					<a href="<?php  ?>">
 						<div class="circle">
 					      <span class="icon arrow"></span>
 					    </div>
-						<p class="button-text blue">Let's Start</p>
+						<p class="button-text blue">I'm Ready to start.</p>
 					</a>
 				</div>
 			</div>

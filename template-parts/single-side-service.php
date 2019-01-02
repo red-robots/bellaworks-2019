@@ -23,7 +23,7 @@
 		<h3>Download our offer.</h3>
 		<p>Download a compelling offer that will help eliminate your current struggles and kickstart your journey to growing your buiness.</p>
 		<div class="button">
-			<div class="learn-more">
+			<div class="action">
 				<a href="<?php  ?>">
 					<div class="circle">
 				      <span class="icon arrow"></span>

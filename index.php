@@ -27,7 +27,7 @@ get_header(); ?>
 
 			
 
-			<section class="secondary-hero">
+			<section class="secondary-hero slideInRight wow">
 				<h2>Sed ut perspiciatis unde omnis.</h2>
 				<h3>Quis autem vel eum iure reprehenderit.</h3>
 			</section>

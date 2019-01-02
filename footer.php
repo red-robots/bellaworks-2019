@@ -18,7 +18,7 @@
 			<h3>Are you ready?</h3>
 			<p>Let's help you grow your buisness.</p>
 			<div class="button">
-				<div class="learn-more">
+				<div class="action">
 				<a href="<?php bloginfo('url'); ?>">	
 					<div class="circle">
 				      <span class="icon arrow"></span>
