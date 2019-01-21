@@ -28,7 +28,9 @@ get_header(); ?>
 						</div>
 						<h2>Web Design</h2>
 						<p>
-							The best sites come from an understanding of what you are and who you're trying to talk to. From there you can strategicly drive them to what you want them to do.
+							<!-- The best sites come from an understanding of what you are and who you're trying to talk to. From there you can strategicly drive them to what you want them to do. -->
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</p>
 						<ul>
 							<li>
@@ -51,7 +53,9 @@ get_header(); ?>
 						</div>
 						<h2>Branding &amp; Strategy</h2>
 						<p>
-							The first step is understanding your customer. If you understand who your customer is then you can craft an image that not only aligns with how they see you but aligns with your companies values.
+							<!-- The first step is understanding your customer. If you understand who your customer is then you can craft an image that not only aligns with how they see you but aligns with your companies values. -->
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</p>
 						<ul>
 							<li>
@@ -74,7 +78,9 @@ get_header(); ?>
 						</div>
 						<h2>Web Development</h2>
 						<p>
-							When the job requires a unique approach with custom solutions. We make sure we pick the appropriate solution for your needs.
+							<!-- When the job requires a unique approach with custom solutions. We make sure we pick the appropriate solution for your needs. -->
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</p>
 						<ul>
 							<li>
@@ -105,7 +111,8 @@ get_header(); ?>
 						<h3>Open and transparent.</h3>
 						<p class="title">Clear Communication</p>
 						<p class="desc">
-							We educate you on how to approach difficult problems. What strategies work and which don't. We will let you know how to and why.
+							<!-- We educate you on how to approach difficult problems. What strategies work and which don't. We will let you know how to and why. -->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</p>
 					</div>
 				</div>
@@ -119,7 +126,8 @@ get_header(); ?>
 						<h3>We will guide you.</h3>
 						<p class="title">Manage your project from start to finish.</p>
 						<p class="desc">
-							We will make sure you're informed at every stage of the process. Our communication is always open ensuring you know what you need to do and what to expect next.
+							<!-- We will make sure you're informed at every stage of the process. Our communication is always open ensuring you know what you need to do and what to expect next. -->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</p>
 					</div>
 					
@@ -134,7 +142,8 @@ get_header(); ?>
 						<h3>A partnership.</h3>
 						<p class="title">An expert to show you the way</p>
 						<p class="desc">
-							Every project has it's own set of goals. We will bring the right skills for the right goal. 
+							<!-- Every project has it's own set of goals. We will bring the right skills for the right goal.  -->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</p>
 					</div>
 				</div>

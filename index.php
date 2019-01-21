@@ -56,7 +56,7 @@ get_header(); ?>
 						if ($wp_query->have_posts()) : ?>
 						<h3>Web Design</h3>
 						<div class="info">
-							Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -85,7 +85,9 @@ get_header(); ?>
 						if ($wp_query->have_posts()) : ?>
 						<h3>Branding &amp; Strategy</h3>
 						<div class="info">
-							Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully.
+							<!-- Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully. -->
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -114,7 +116,7 @@ get_header(); ?>
 						if ($wp_query->have_posts()) : ?>
 						<h3>Custom Development</h3>
 						<div class="info">
-							Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
 						</div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
