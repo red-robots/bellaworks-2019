@@ -26,11 +26,9 @@ get_header(); ?>
 						<div class="icon">
 							<img src="<?php bloginfo('template_url'); ?>/images/icon_mock5.png">	
 						</div>
-						<h2>Web Design</h2>
+						<h2>Digital Services</h2>
 						<p>
-							<!-- The best sites come from an understanding of what you are and who you're trying to talk to. From there you can strategicly drive them to what you want them to do. -->
-
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							Growing online isn’t simply about a good-looking website. That’s a great start, but there’s more work to do if you want to set yourself up for success. Fortunately, we can take care of everything.
 						</p>
 						<ul>
 							<li>
@@ -53,9 +51,7 @@ get_header(); ?>
 						</div>
 						<h2>Branding &amp; Strategy</h2>
 						<p>
-							<!-- The first step is understanding your customer. If you understand who your customer is then you can craft an image that not only aligns with how they see you but aligns with your companies values. -->
-
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							In an increasingly competitive world, it’s important to pause before rushing online. We’ll help you discover who you are, what you do, and how you should look—plus why it all matters.
 						</p>
 						<ul>
 							<li>
@@ -76,11 +72,9 @@ get_header(); ?>
 						<div class="icon">
 							<img src="<?php bloginfo('template_url'); ?>/images/icon_onlinecart.png">
 						</div>
-						<h2>Web Development</h2>
+						<h2>Custom Development</h2>
 						<p>
-							<!-- When the job requires a unique approach with custom solutions. We make sure we pick the appropriate solution for your needs. -->
-
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							Sometimes you need more than just a beautiful website to compete online. That’s why we build custom web apps, WordPress plugins, applications that talk to other services via API, and more.
 						</p>
 						<ul>
 							<li>
@@ -159,7 +153,7 @@ get_header(); ?>
 			if ($wp_query->have_posts()) : ?>
 				<section class="our-staff">
 					<div class="wrapper flex">
-					<h2>Our <strike>Robots</strike> Staff</h2>
+					<h2>Our <!-- <strike>Robots</strike> --> Staff</h2>
 					<?php while ($wp_query->have_posts()) : $wp_query->the_post();
 
 						$superpower = get_field('superpower');

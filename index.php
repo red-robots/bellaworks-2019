@@ -28,8 +28,8 @@ get_header(); ?>
 			
 
 			<section class="secondary-hero slideInRight wow">
-				<h2>Sed ut perspiciatis unde omnis.</h2>
-				<h3>Quis autem vel eum iure reprehenderit.</h3>
+				<h2>FINALLY—A WEB AGENCY THAT WON'T LET YOU DOWN.</h2>
+				<h3>WE’RE CHARLOTTE’S FRIENDLIEST FULL-SERVICE DIGITAL AGENCY. WE OFFER DESIGN, STRATEGY, AND DEVELOPMENT. AND WHETHER YOU NEED “JUST” A WEBSITE OR YOU NEED TO SELL GLOBALLY, WE’VE GOT YOU COVERED. WE’RE BELLAWORKS, AND YOUR SEARCH IS OVER.</h3>
 			</section>
 
 
@@ -54,9 +54,9 @@ get_header(); ?>
 							)
 						));
 						if ($wp_query->have_posts()) : ?>
-						<h3>Web Design</h3>
+						<h3>Digital Services</h3>
 						<div class="info">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							Growing online isn’t simply about a good-looking website. That’s a great start, but there’s more work to do if you want to set yourself up for success. Fortunately, we can take care of everything.
 						</div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -87,7 +87,7 @@ get_header(); ?>
 						<div class="info">
 							<!-- Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully. -->
 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							In an increasingly competitive world, it’s important to pause before rushing online. We’ll help you discover who you are, what you do, and how you should look—plus why it all matters.
 						</div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -116,7 +116,7 @@ get_header(); ?>
 						if ($wp_query->have_posts()) : ?>
 						<h3>Custom Development</h3>
 						<div class="info">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							Sometimes you need more than just a beautiful website to compete online. That’s why we build custom web apps, WordPress plugins, applications that talk to other services via API, and more.
 						</div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>

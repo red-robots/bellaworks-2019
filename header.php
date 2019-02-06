@@ -56,8 +56,8 @@
 			<div class="wrapper ">
 				<div class="home-flex">
 					<section class="hero slideInLeft wow">
-						<h2>Sed ut perspiciatis unde omnis.</h2>
-						<h3>Quis autem vel eum iure reprehenderit.</h3>
+						<h2>BEAUTIFUL WEB DESIGN THAT WORKS.</h2>
+						<h3>That‘s Bellaworks.</h3>
 					</section>
 					<section class="image slideInRight wow">
 						<img src="<?php bloginfo('template_url'); ?>/images/home-placeholder.png">
