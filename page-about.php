@@ -31,18 +31,27 @@ get_header(); ?>
 							Growing online isn’t simply about a good-looking website. That’s a great start, but there’s more work to do if you want to set yourself up for success. Fortunately, we can take care of everything.
 						</p>
 						<ul>
+						<?php
+							$wp_query = new WP_Query();
+							$wp_query->query(array(
+							'post_type'=>'service',
+							'posts_per_page' => 10,
+							'paged' => $paged,
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'service_type', // your custom taxonomy
+									'field' => 'slug',
+									'terms' => array( 'web-design' ) // the terms (categories) you created
+								)
+							)
+						));
+						if ($wp_query->have_posts()) : ?>
+						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<li>
-								<a href="">Website Design</a>
+								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 							</li>
-							<li>
-								<a href="">Digital Strategy</a>
-							</li>
-							<li>
-								<a href="">Copywriting</a>
-							</li>
-							<li>
-								<a href="">Search Engine Optimization (SEO)</a>
-							</li>
+							<?php endwhile; ?>
+						<?php endif; ?>
 						</ul>
 					</div>
 					<div class="third">
@@ -54,18 +63,28 @@ get_header(); ?>
 							In an increasingly competitive world, it’s important to pause before rushing online. We’ll help you discover who you are, what you do, and how you should look—plus why it all matters.
 						</p>
 						<ul>
+						
+							<?php
+							$wp_query = new WP_Query();
+							$wp_query->query(array(
+							'post_type'=>'service',
+							'posts_per_page' => 10,
+							'paged' => $paged,
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'service_type', // your custom taxonomy
+									'field' => 'slug',
+									'terms' => array( 'branding-strategy' ) // the terms (categories) you created
+								)
+							)
+						));
+						if ($wp_query->have_posts()) : ?>
+						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<li>
-								<a href="">Logo Design</a>
+								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 							</li>
-							<li>
-								<a href="">Brand Positioning</a>
-							</li>
-							<li>
-								<a href="">Strategy</a>
-							</li>
-							<li>
-								<a href="">Social Media</a>
-							</li>
+							<?php endwhile; ?>
+						<?php endif; ?>
 						</ul>
 					</div>
 					<div class="third">
@@ -77,18 +96,28 @@ get_header(); ?>
 							Sometimes you need more than just a beautiful website to compete online. That’s why we build custom web apps, WordPress plugins, applications that talk to other services via API, and more.
 						</p>
 						<ul>
+						
+							<?php
+							$wp_query = new WP_Query();
+							$wp_query->query(array(
+							'post_type'=>'service',
+							'posts_per_page' => 10,
+							'paged' => $paged,
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'service_type', // your custom taxonomy
+									'field' => 'slug',
+									'terms' => array( 'custom-development' ) // the terms (categories) you created
+								)
+							)
+						));
+						if ($wp_query->have_posts()) : ?>
+						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<li>
-								<a href="">Custom WordPress Solutions</a>
+								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 							</li>
-							<li>
-								<a href="">Content Management Systems</a>
-							</li>
-							<li>
-								<a href="">Front End Development</a>
-							</li>
-							<li>
-								<a href="">Custom Plugin Development</a>
-							</li>
+							<?php endwhile; ?>
+						<?php endif; ?>
 						</ul>
 					</div>
 				</section>

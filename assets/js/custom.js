@@ -44,6 +44,12 @@ jQuery(document).ready(function ($) {
 	    $(this).parent().toggleClass('active');
 	 
 	});
+	// $(:input).onfocus() {
+	// 	$(this).css({top:0});
+	// }
+	// $(':input').each(function () {
+	//     alert($(this).parent().find('label').text());
+	// });
 
 	/*
 	*

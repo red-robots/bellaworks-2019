@@ -7,7 +7,7 @@
 		<div class="cta">
 			<h3>Ready to start your project?</h3>
 			<div class="button">
-				<div class="learn-more">
+				<div class="action">
 					<a href="<?php  ?>">
 						<div class="circle">
 					      <span class="icon arrow"></span>
@@ -21,7 +21,7 @@
 
 	<div class="side-widget">
 		<h3>Download our offer.</h3>
-		<p>Download a compelling offer that will help eliminate your current struggles and kickstart your journey to growing your buiness.</p>
+		<p>Whether you're designing your first site or redesigning your tenth... It can be hard to prioritize your approach and focus on what matters most. Dispel the confusion by downloading our small business roadmap for free.</p>
 		<div class="button">
 			<div class="action">
 				<a href="<?php  ?>">

@@ -53,7 +53,7 @@
 					<?php get_template_part('inc/nav'); ?>
 				</div><!-- wrapper -->
 			</header><!-- #masthead -->
-			<div class="wrapper ">
+			<div class="wrapper colflex">
 				<div class="home-flex">
 					<section class="hero slideInLeft wow">
 						<h2>BEAUTIFUL WEB DESIGN THAT WORKS.</h2>

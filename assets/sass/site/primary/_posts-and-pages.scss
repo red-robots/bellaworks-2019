@@ -118,6 +118,12 @@
 	Homepage
 
 */
+.colflex {
+	display: flex;
+	height: 65%;
+	flex-direction: column;
+	justify-content: center;
+}
 .home-flex {
 	display: flex;
 	width: 100%;
@@ -134,7 +140,7 @@
 		width: 100%;
 		position: relative;
 		@media screen and (min-width: $tabwidth) {
-			width: 45%;
+			width: 35%;
 		}
 	}
 	
@@ -199,10 +205,11 @@ section.secondary-hero {
 		font-size: 1.2rem;
 		color: $color-light-blue;
 		@media screen and (min-width: $tabwidth) {
-		
+			
 		}
 		@media screen and (min-width: $deskwidth) {
-			
+			width: 60%;
+			margin: 0 auto;
 		}
 	}
 }
@@ -386,13 +393,22 @@ section.our-staff {
 }
 section.contact {
 	.contact1 {
-		color: $color-davy-grey;
+		// color: $color-davy-grey;
+		color: rgba(#fff,.8);
+		margin-bottom: 40px;
 	}
 	.info {
 		margin: 0 0 30px 0;
 	}
 	.start {
 		text-align: center;
+		
+		h3 {
+			color: $color-davy-grey;
+		}
+	}
+	h3 {
+		color: rgba(#fff,1);
 	}
 }
 section.work {
@@ -651,6 +667,7 @@ section.services {
 	}
 	h3 {
 		font-size: 0.85rem;
+		margin: 0 0 10px 0;
 	}
 	.info {
 		font-size: 1.05rem;

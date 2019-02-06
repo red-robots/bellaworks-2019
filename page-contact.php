@@ -23,7 +23,7 @@ get_header(); ?>
 
 
 			<section class="contact">
-				<div class="half half-pad azu-white contact1">
+				<div class="half half-pad color-light-blue-dark contact1">
 					
 					<section class="info">
 						<h3>Stop by.</h3>

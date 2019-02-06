@@ -15,8 +15,11 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: $color__text-input;
-	border: 1px solid $color__border-input;
-	border-radius: 3px;
+	border-bottom: 2px solid $color-davy-grey;
+	border-top: 0px solid $color-davy-grey;
+	border-left: 0px solid $color-davy-grey;
+	border-right: 0px solid $color-davy-grey;
+	border-radius: 0px;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -42,10 +45,87 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"] {
-	padding: 3px;
+	padding: 10px 3px;
 }
-
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.gform_wrapper {
+	input[type="text"],
+	input[type="textarea"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	 {
+		padding: 10px 3px;
+		background-color: rgba(#eee, .5);
+	}
+}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+	padding: 20px !important;
+	@include transition(all ease .2s);
+	&:focus {
+		border-bottom: 5px solid $color-dark-blue;
+	}
+}
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+.gform_wrapper ul.gform_fields li.gfield {
+	position: relative;
+	padding: 15px  0 15px 0;
+
+}
+.gform_wrapper .top_label .gfield_label {
+	width: auto;
+	position: absolute;
+	// top: 40px;
+	top: 0;
+	left: 5px;
+	&:hover {
+
+	}
+}
+input.gform_button  {
+	border-radius: 0;
+	padding: 20px 35px;
+	color: rgba(#fff, .8);
+	background-color: $color-light-blue;
+	box-shadow: none;
+	text-shadow: none;
+	border: 0;
+	cursor: pointer;
+	@include transition(all ease .1s);
+	&:hover {
+		background-color: $color-mandarin;
+		box-shadow: none;
+		text-shadow: none;
+	}
+}
+.page-template-page-lets-do-this  {
+	.gform_wrapper {
+		@media screen and (min-width: $tabwidth) {
+
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 60%;
+			margin: 40px auto;
+		}
+	}
+	
 }
