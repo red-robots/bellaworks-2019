@@ -28,8 +28,9 @@ get_header(); ?>
 			
 
 			<section class="secondary-hero slideInRight wow">
-				<h2>FINALLY—A WEB AGENCY THAT WON'T LET YOU DOWN.</h2>
-				<h3>WE’RE CHARLOTTE’S FRIENDLIEST FULL-SERVICE DIGITAL AGENCY. WE OFFER DESIGN, STRATEGY, AND DEVELOPMENT. AND WHETHER YOU NEED “JUST” A WEBSITE OR YOU NEED TO SELL GLOBALLY, WE’VE GOT YOU COVERED. WE’RE BELLAWORKS, AND YOUR SEARCH IS OVER.</h3>
+				<h2>Finally - A web agency that won't let you down.</h2>
+				<h3>We're Charlotte's Friendliest full-service digital agency. We offer design, strategy, and development. And whether you need "just" a website or you need to sell globally, we've got you covered. We're Bellaworks, and you search is over.
+				</h3>
 			</section>
 
 
@@ -85,8 +86,6 @@ get_header(); ?>
 						if ($wp_query->have_posts()) : ?>
 						<h3>Branding &amp; Strategy</h3>
 						<div class="info">
-							<!-- Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully. -->
-
 							In an increasingly competitive world, it’s important to pause before rushing online. We’ll help you discover who you are, what you do, and how you should look—plus why it all matters.
 						</div>
 							<ul>
