@@ -8,7 +8,7 @@
 			<h3>Ready to start your project?</h3>
 			<div class="button">
 				<div class="action">
-					<a href="<?php  ?>">
+					<a href="<?php bloginfo('url'); ?>/lets-do-this">
 						<div class="circle">
 					      <span class="icon arrow"></span>
 					    </div>
@@ -24,7 +24,7 @@
 		<p>Whether you're designing your first site or redesigning your tenth... It can be hard to prioritize your approach and focus on what matters most. Dispel the confusion by downloading our small business roadmap for free.</p>
 		<div class="button">
 			<div class="action">
-				<a href="<?php  ?>">
+				<a href="<?php bloginfo('url'); ?>/download">
 					<div class="circle">
 				      <span class="icon arrow"></span>
 				    </div>

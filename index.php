@@ -28,8 +28,8 @@ get_header(); ?>
 			
 
 			<section class="secondary-hero fadeInUp wow">
-				<h2>Finally - A web agency that won't let you down.</h2>
-				<h3>We're Charlotte's Friendliest full-service digital agency. We offer design, strategy, and development. And whether you need "just" a website or you need to sell globally, we've got you covered. We're Bellaworks, and you search is over.
+				<h2>Finally - The web agency you've been waiting for.</h2>
+				<h3>We're a full-service digital agency in Charlotte. We offer design, strategy, and development. And whether you need "just" a website or you need to sell globally, we've got you covered. We're Bellaworks, and you search is over.
 				</h3>
 			</section>
 

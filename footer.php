@@ -19,7 +19,7 @@
 			<p>Let's help you grow your buisness.</p>
 			<div class="button">
 				<div class="action">
-				<a href="<?php bloginfo('url'); ?>">	
+				<a href="<?php bloginfo('url'); ?>/lets-do-this">	
 					<div class="circle">
 				      <span class="icon arrow"></span>
 				    </div>

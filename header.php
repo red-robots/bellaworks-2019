@@ -53,14 +53,14 @@
 					<?php get_template_part('inc/nav'); ?>
 				</div><!-- wrapper -->
 			</header><!-- #masthead -->
-			<div class="wrapper colflex">
+			<div class="herowrap colflex">
 				<div class="home-flex">
 					<section class="hero slideInLeft wow">
 						<h2>BEAUTIFUL WEB DESIGN THAT WORKS.</h2>
 						<h3>That‘s Bellaworks.</h3>
 					</section>
 					<section class="image slideInRight wow">
-						<img src="<?php bloginfo('template_url'); ?>/images/home-placeholder.png">
+						<img src="<?php bloginfo('template_url'); ?>/images/mock-computer.png">
 					</section>
 				</div>
 			</div>

@@ -54,6 +54,7 @@ button:focus {
     outline: none;
 }
 .gform_wrapper {
+	color: $color-davy-grey;
 	input[type="text"],
 	input[type="textarea"],
 	input[type="email"],
@@ -72,7 +73,8 @@ button:focus {
 	input[type="color"],
 	 {
 		padding: 10px 3px;
-		background-color: rgba(#eee, .5);
+		// background-color: rgba(#eee, .5);
+		color: $color-indian-red;
 	}
 }
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
@@ -93,10 +95,11 @@ textarea {
 }
 .gform_wrapper .top_label .gfield_label {
 	width: auto;
-	position: absolute;
+	// position: absolute;
 	// top: 40px;
-	top: 0;
-	left: 5px;
+	// top: 0;
+	// left: 0px;
+	color: $color-davy-grey;
 	&:hover {
 
 	}
@@ -104,8 +107,11 @@ textarea {
 input.gform_button  {
 	border-radius: 0;
 	padding: 20px 35px;
-	color: rgba(#fff, .8);
+	// color: rgba(#fff, .8);
 	background-color: $color-light-blue;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
 	box-shadow: none;
 	text-shadow: none;
 	border: 0;

@@ -15,7 +15,19 @@ body {
 		padding: 0px;
 	}
 }
-
+.herowrap {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		// width: 90%;
+		padding: 0px;
+	}
+}
 .content-area {
 	width: 100%;
 	margin: 0px auto;

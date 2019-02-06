@@ -2,7 +2,7 @@
 	<h3>Are you ready?</h3>
 	<div class="button">
 	<div class="action">
-		<a href="<?php bloginfo(); ?>">
+		<a href="<?php bloginfo('url'); ?>/lets-do-this">
 			<div class="circle">
 		      <span class="icon arrow"></span>
 		    </div>
