@@ -19,18 +19,28 @@ get_header(); ?>
 
 		<?php
 			/* Start the Loop */
-			// $wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'homepage'));
-			// if ( have_posts() ) : the_post(); 
-			// 	get_template_part( 'template-parts/content', 'index' );
-			// endif; ?>
+			$wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'homepage'));
+			if ( have_posts() ) : the_post(); 
+				
+				// $hero = get_field('hero_text');
+				// $hero_small = get_field('hero_small');
+				$second_block_copy_lead = get_field('second_block_copy_lead');
+				$second_block_copy = get_field('second_block_copy');
+				$service_1_title = get_field('service_1_title');
+				$service_1_copy = get_field('service_1_copy');
+				$service_2_title = get_field('service_2_title');
+				$service_2_copy = get_field('service_2_copy');
+				$service_3_title = get_field('service_3_title');
+				$service_3_copy = get_field('service_3_copy');
+
+			endif; ?>
 
 
 			
 
 			<section class="secondary-hero fadeInUp wow">
-				<h2>Finally - The web agency you've been waiting for.</h2>
-				<h3>We're a full-service digital agency in Charlotte. We offer design, strategy, and development. And whether you need "just" a website or you need to sell globally, we've got you covered. We're Bellaworks, and you search is over.
-				</h3>
+				<h2><?php echo $second_block_copy_lead; ?></h2>
+				<h3><?php echo $second_block_copy; ?></h3>
 			</section>
 
 
@@ -55,10 +65,9 @@ get_header(); ?>
 							)
 						));
 						if ($wp_query->have_posts()) : ?>
-						<h3>Digital Services</h3>
-						<div class="info">
-							Growing online isn’t simply about a good-looking website. That’s a great start, but there’s more work to do if you want to set yourself up for success. Fortunately, we can take care of everything.
-						</div>
+						
+						<h3><?php echo $service_1_title; ?></h3>
+						<div class="info"><?php echo $service_1_copy; ?></div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 								<li>
@@ -84,10 +93,8 @@ get_header(); ?>
 							)
 						));
 						if ($wp_query->have_posts()) : ?>
-						<h3>Branding &amp; Strategy</h3>
-						<div class="info">
-							In an increasingly competitive world, it’s important to pause before rushing online. We’ll help you discover who you are, what you do, and how you should look—plus why it all matters.
-						</div>
+						<h3><?php echo $service_2_title; ?></h3>
+						<div class="info"><?php echo $service_2_copy; ?></div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 								<li>
@@ -113,10 +120,8 @@ get_header(); ?>
 							)
 						));
 						if ($wp_query->have_posts()) : ?>
-						<h3>Custom Development</h3>
-						<div class="info">
-							Sometimes you need more than just a beautiful website to compete online. That’s why we build custom web apps, WordPress plugins, applications that talk to other services via API, and more.
-						</div>
+						<h3><?php echo $service_3_title; ?></h3>
+						<div class="info"><?php echo $service_3_copy; ?></div>
 							<ul>
 							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 								<li>

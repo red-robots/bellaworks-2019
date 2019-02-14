@@ -670,12 +670,16 @@ section.services {
 	}
 	h3 {
 		font-size: 0.85rem;
-		margin: 0 0 10px 0;
+		margin: 0 0 4px 0;
+	}
+	p {
+		margin: 0;
 	}
 	.info {
 		font-size: 1.05rem;
 		padding: 0 0 8px 0;
 		border-bottom: 1px solid rgba(#fff, .2);
+		color: rgba(#fff, .7);
 	}
 }
 

@@ -2085,8 +2085,9 @@ section.services .service-wrap{width:100%;float:left;position:relative;display:-
 section.services li{margin:0;padding:0}
 section.services a{color:#fff;padding:0 0 0 3px}
 section.services a:hover{color:rgba(255,255,255,0.5)}
-section.services h3{font-size:.85rem;margin:0 0 10px 0}
-section.services .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1px solid rgba(255,255,255,0.2)}
+section.services h3{font-size:.85rem;margin:0 0 4px 0}
+section.services p{margin:0}
+section.services .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
