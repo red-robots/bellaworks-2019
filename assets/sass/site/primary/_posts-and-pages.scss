@@ -120,9 +120,12 @@
 */
 .colflex {
 	display: flex;
-	height: 65%;
+	height: 45%;
 	flex-direction: column;
 	justify-content: center;
+	@media screen and (min-width: $tabwidth) {
+		height: 65%;
+	}
 }
 .home-flex {
 	display: flex;
@@ -140,8 +143,45 @@
 	section.image {
 		width: 100%;
 		position: relative;
+		clear: both;
 		@media screen and (min-width: $tabwidth) {
 			width: 35%;
+			clear:none;
+		}
+		img {
+			width: 150%;
+			max-width: 150%;
+			position: absolute;
+			top: -0px;
+    		right: 0%;
+    		@media screen and (min-width: $tabwidth) {
+    			width: 200%;
+				max-width: 200%;
+				position: absolute;
+				top: auto;
+				bottom: -20px;
+	    		right: 10%;
+    		}
+    		@media screen and (min-width: $midwidth) {
+    			bottom: -0px;
+	    		right: 10%;
+    		}
+    		@media screen and (min-width: $deskwidth) {
+    			bottom: -50px;
+	    		right: 10%;
+    		}
+    		@media screen and (min-width: $largewidth) {
+    			bottom: -50px;
+	    		right: 10%;
+    		}
+    		@media screen and (min-width: $xlargewidth) {
+    			bottom: -70px;
+	    		right: 10%;
+    		}
+    		@media screen and (min-width: $xxlargewidth) {
+    			bottom: -90px;
+	    		right: 10%;
+    		}
 		}
 	}
 	
@@ -149,6 +189,7 @@
 section.hero {
 	width: 100%;
 	color: #fff;
+	margin: 0 0 40px 0;
 	@media screen and (min-width: $tabwidth) {
 		width: 45%;
 		margin: 0 0 0 7%;
@@ -160,21 +201,45 @@ section.hero {
 		font-size: 3rem;
 		line-height: 1;
 		@media screen and (min-width: $tabwidth) {
-			font-size: 4rem;
+			font-size: 3rem;
 
 		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 3.8rem;
+		}
 		@media screen and (min-width: $deskwidth) {
-			font-size: 5rem;
+			font-size: 5.2rem;
+		}
+		@media screen and (min-width: $largewidth) {
+			font-size: 6rem;
+		}
+		@media screen and (min-width: $xlargewidth) {
+			font-size: 7rem;
+		}
+		@media screen and (min-width: $xxlargewidth) {
+			font-size: 7rem;
 		}
 	}
 	h3 {
 		text-transform: capitalize;
-		font-size: 2rem;
+		font-size: 1rem;
 		@media screen and (min-width: $tabwidth) {
-		
+			font-size: 1.3rem;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 1.6rem;
 		}
 		@media screen and (min-width: $deskwidth) {
-			
+			font-size: 2rem;
+		}
+		@media screen and (min-width: $largewidth) {
+
+		}
+		@media screen and (min-width: $xlargewidth) {
+
+		}
+		@media screen and (min-width: $xxlargewidth) {
+
 		}
 	}
 }
