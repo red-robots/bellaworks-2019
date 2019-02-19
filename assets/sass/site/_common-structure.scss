@@ -208,14 +208,25 @@ body {
 	float: left;
 	padding: 50px 0;
 }
+section.post {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 66.66667%;
+		float: right;
+	}
+	img {
+		max-width: 100%;
+	}
+}
 article.post {
 	width: 100%;
 	float: left;
 	font-size: 1.3rem;
 	color: $color-davy-grey;
 	@media screen and (min-width: $tabwidth) {
-		width: 66.66667%;
-		float: right;
+		// width: 66.66667%;
+		// float: right;
 	}
 	img {
 		max-width: 100%;
@@ -361,6 +372,28 @@ ul.side-social {
 }
 section.social-side {
 	
+}
+#leadmagnet {
+	color: #fff;
+	padding: 50px;
+	@media screen and (min-width: $tabwidth) {
+		width: 80%;
+		margin: auto;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 60%;
+	}
+	.gform_description,
+	.gfield_label {
+		color: #fff;
+	}
+	.gform_button {
+		background-color: #333;
+		color: $color-indian-red;
+		&:hover {
+			background-color: #fff;
+		}
+	}
 }
 
 

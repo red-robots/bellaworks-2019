@@ -39,8 +39,13 @@ get_header(); ?>
 			
 
 			<section class="secondary-hero fadeInUp wow">
-				<h2><?php echo $second_block_copy_lead; ?></h2>
-				<h3><?php echo $second_block_copy; ?></h3>
+				<section class="desc">
+					<h2><?php echo $second_block_copy_lead; ?></h2>
+					<?php echo $second_block_copy; ?>
+				</section>
+				<section class="offer">
+					<?php get_template_part('template-parts/offer'); ?>
+				</section>
 			</section>
 
 

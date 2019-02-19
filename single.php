@@ -15,7 +15,6 @@ get_header(); ?>
 				<?php
 				while ( have_posts() ) : the_post(); ?>
 					<header class="entry-header">
-
 						<?php the_title( '<h1 class="single-title">', '</h1>' ); ?>
 						<div class="date"><?php the_date(); ?></div>
 					</header><!-- .entry-header -->
@@ -27,9 +26,12 @@ get_header(); ?>
 					<?php } ?>
 
 					<div class="post-content">
-						<article class="post">
-							<?php the_content(); ?>
-						</article>
+						<section class="post">
+							<article class="post">
+								<?php the_content(); ?>
+							</article>
+						</section>
+						
 						<?php get_template_part('template-parts/single-side'); ?>
 					</div>
 

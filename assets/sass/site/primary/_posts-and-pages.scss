@@ -154,6 +154,7 @@
 			position: absolute;
 			top: -0px;
     		right: 0%;
+			-webkit-transform: translate3d(0,0,0);
     		@media screen and (min-width: $tabwidth) {
     			width: 200%;
 				max-width: 200%;
@@ -200,6 +201,9 @@ section.hero {
 	h2 {
 		font-size: 3rem;
 		line-height: 1;
+		width: auto;
+		position: relative;
+		-webkit-transform: translate3d(0,0,0);
 		@media screen and (min-width: $tabwidth) {
 			font-size: 3rem;
 
@@ -223,6 +227,9 @@ section.hero {
 	h3 {
 		text-transform: capitalize;
 		font-size: 1rem;
+		width: auto;
+		position: relative;
+		-webkit-transform: translate3d(0,0,0);
 		@media screen and (min-width: $tabwidth) {
 			font-size: 1.3rem;
 		}
@@ -247,23 +254,29 @@ section.hero {
 section.secondary-hero {
 	width: 100%;
 	clear: both;
-	padding: 50px 0;
+	padding: 50px 20px;
 	background-color: #fff;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: left;
+	// text-transform: uppercase;
 	font-family: futura-pt, sans-serif;
 	font-weight: 700;
 	@media screen and (min-width: $tabwidth) {
-		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: stretch;
 	}
 	@media screen and (min-width: $deskwidth) {
 		
 	}
 	h2 {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		color: $color-dark-blue;
+		line-height: 1.2;
+		margin: 0 0 10px 0;
 		@media screen and (min-width: $tabwidth) {
-		
+			font-size: 2.3rem;
 		}
 		@media screen and (min-width: $deskwidth) {
 			
@@ -276,9 +289,61 @@ section.secondary-hero {
 			
 		}
 		@media screen and (min-width: $deskwidth) {
-			width: 60%;
+			// width: 60%;
 			margin: 0 auto;
 		}
+	}
+	p {
+		font-size: 1.2rem;
+		color: $color-light-blue;
+		@media screen and (min-width: $tabwidth) {
+			
+		}
+		@media screen and (min-width: $deskwidth) {
+			// width: 60%;
+			margin: 0 auto;
+		}
+	}
+	section.desc {
+		width: 100%;
+		position: relative;
+		float: left;
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+			padding: 30px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 50px;
+		}
+	}
+	section.offer {
+		width: 100%;
+		position: relative;
+		float: right;
+		background-color: #eee;
+		padding: 30px;
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+			padding: 30px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 50px;
+		}
+		p {
+			color: $color-davy-grey;
+		}
+		h3 {
+		font-size: 1.8rem;
+		color: $color-dark-blue;
+		margin: 0 0 15px 0;
+		@media screen and (min-width: $tabwidth) {
+			
+		}
+		@media screen and (min-width: $deskwidth) {
+			// width: 60%;
+			margin: 0 auto;
+		}
+	}
 	}
 }
 section.about-what-we-do {

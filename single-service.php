@@ -15,9 +15,7 @@ get_header(); ?>
 				<?php
 				while ( have_posts() ) : the_post(); ?>
 					<header class="entry-header">
-
-						<?php the_title( '<h1 class="single-title">', '</h1>' ); ?>
-						<div class="date"><?php the_date(); ?></div>
+						<span class="service-title">SERVICES</span>
 					</header><!-- .entry-header -->
 
 					<?php if( has_post_thumbnail() ) { ?>
@@ -27,9 +25,15 @@ get_header(); ?>
 					<?php } ?>
 
 					<div class="post-content">
-						<article class="post">
-							<?php the_content(); ?>
-						</article>
+						<section class="post">
+							<header class="entry-header">
+								<?php the_title( '<h1 class="services-title">', '</h1>' ); ?>
+							</header><!-- .entry-header -->
+							<article class="post">
+								<?php the_content(); ?>
+							</article>
+						</section>
+						
 						<?php get_template_part('template-parts/single-side-service'); ?>
 					</div>
 

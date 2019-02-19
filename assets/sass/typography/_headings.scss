@@ -23,12 +23,15 @@ h6.title::after
  //    border-bottom: 4px solid;
  //    content: "";
  //    margin-top: .74em;
-    display: block;
-    width: 10px;
-    height: 0;
-    border-bottom: 10px solid;
-    content: "";
-    margin-top: .64em;
+    
+
+// The dot...
+    // display: block;
+    // width: 10px;
+    // height: 0;
+    // border-bottom: 10px solid;
+    // content: "";
+    // margin-top: .64em;
 }
 footer.site-footer {
 	h3.title::after,
@@ -76,6 +79,36 @@ header.entry-header {
 		text-transform: capitalize;
 		@media screen and (min-width: $tabwidth) {
 			width: 70%;
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+	}
+	h1.services-title {
+		// color: $color-light-blue;
+		// font-size: 4rem;
+		font-weight: 700;
+		font-size: 2.5rem;
+		color: $color-davy-grey;
+		text-transform: capitalize;
+		@media screen and (min-width: $tabwidth) {
+			width: 70%;
+			margin: -80px 0 20px 0;
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+	}
+	.service-title {
+		// color: $color-light-blue;
+		// font-size: 4rem;
+		font-weight: 700;
+		font-size: 1rem;
+		color: $color-light-blue;
+		text-transform: capitalize;
+		@media screen and (min-width: $tabwidth) {
+			width: 70%;
+			// margin: -50px 0 0 0;
 		}
 		@media screen and (min-width: $deskwidth) {
 

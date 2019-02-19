@@ -83,6 +83,12 @@ jQuery(document).ready(function ($) {
 		width: '80%', 
 		height: '80%'
 	});
+	// Lead Magnet
+	$(".inline").colorbox({
+		inline:true, 
+		width:"100%",
+		opacity:1
+	});
 	
 	/*
 	*
