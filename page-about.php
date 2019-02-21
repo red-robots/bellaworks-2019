@@ -7,7 +7,19 @@
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header(); 
+
+$block_1_title = get_field('block_1_title');
+$block_1_subtitle = get_field('block_1_subtitle');
+$block_1_text = get_field('block_1_text');
+$block_2_title = get_field('block_2_title');
+$block_2_subtitle = get_field('block_2_subtitle');
+$block_2_text = get_field('block_2_text');
+$block_3_title = get_field('block_3_title');
+$block_3_subtitle = get_field('block_3_subtitle');
+$block_3_text = get_field('block_3_text');
+
+?>
 
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
@@ -21,15 +33,31 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 
+				<?php
+			/* Start the Loop */
+			$wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'homepage'));
+			if ( have_posts() ) : the_post(); 
+				
+				// $hero = get_field('hero_text');
+				// $hero_small = get_field('hero_small');
+				// $second_block_copy_lead = get_field('second_block_copy_lead');
+				// $second_block_copy = get_field('second_block_copy');
+				$service_1_title = get_field('service_1_title');
+				$service_1_copy = get_field('service_1_copy');
+				$service_2_title = get_field('service_2_title');
+				$service_2_copy = get_field('service_2_copy');
+				$service_3_title = get_field('service_3_title');
+				$service_3_copy = get_field('service_3_copy');
+
+			endif; ?>
+
 				<section class="about-what-we-do">
 					<div class="third">
 						<div class="icon">
 							<img src="<?php bloginfo('template_url'); ?>/images/icon_mock5.png">	
 						</div>
-						<h2>Digital Services</h2>
-						<p>
-							Growing online isn’t simply about a good-looking website. That’s a great start, but there’s more work to do if you want to set yourself up for success. Fortunately, we can take care of everything.
-						</p>
+						<h2><?php echo $service_1_title; ?></h2>
+						<?php echo $service_1_copy; ?>
 						<ul>
 						<?php
 							$wp_query = new WP_Query();
@@ -58,10 +86,8 @@ get_header(); ?>
 						<div class="icon">
 							<img src="<?php bloginfo('template_url'); ?>/images/icon_idea.png">
 						</div>
-						<h2>Branding &amp; Strategy</h2>
-						<p>
-							In an increasingly competitive world, it’s important to pause before rushing online. We’ll help you discover who you are, what you do, and how you should look—plus why it all matters.
-						</p>
+						<h2><?php echo $service_2_title; ?></h2>
+						<?php echo $service_2_copy; ?>
 						<ul>
 						
 							<?php
@@ -91,10 +117,8 @@ get_header(); ?>
 						<div class="icon">
 							<img src="<?php bloginfo('template_url'); ?>/images/icon_onlinecart.png">
 						</div>
-						<h2>Custom Development</h2>
-						<p>
-							Sometimes you need more than just a beautiful website to compete online. That’s why we build custom web apps, WordPress plugins, applications that talk to other services via API, and more.
-						</p>
+						<h2><?php echo $service_3_title; ?></h2>
+						<?php echo $service_3_copy; ?>
 						<ul>
 						
 							<?php
@@ -131,11 +155,10 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="two-third">
-						<h3>Open and transparent.</h3>
-						<p class="title">Clear Communication</p>
+						<h3><?php echo $block_1_title; ?></h3>
+						<p class="title"><?php echo $block_1_title; ?></p>
 						<p class="desc">
-							<!-- We educate you on how to approach difficult problems. What strategies work and which don't. We will let you know how to and why. -->
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							<?php echo $block_1_title; ?>
 						</p>
 					</div>
 				</div>
@@ -146,11 +169,10 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="two-third">
-						<h3>We will guide you.</h3>
-						<p class="title">Manage your project from start to finish.</p>
+						<h3><?php echo $block_2_title; ?></h3>
+						<p class="title"><?php echo $block_2_title; ?></p>
 						<p class="desc">
-							<!-- We will make sure you're informed at every stage of the process. Our communication is always open ensuring you know what you need to do and what to expect next. -->
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							<?php echo $block_2_title; ?>
 						</p>
 					</div>
 					
@@ -162,11 +184,10 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="two-third">
-						<h3>A partnership.</h3>
-						<p class="title">An expert to show you the way</p>
+						<h3><?php echo $block_3_title; ?></h3>
+						<p class="title"><?php echo $block_3_title; ?></p>
 						<p class="desc">
-							<!-- Every project has it's own set of goals. We will bring the right skills for the right goal.  -->
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+							<?php echo $block_3_title; ?>
 						</p>
 					</div>
 				</div>
