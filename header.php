@@ -56,8 +56,15 @@
 			<div class="herowrap colflex">
 				<div class="home-flex">
 					<section class="hero slideInLeft wow js-blocks">
-						<h2>BEAUTIFUL WEB DESIGN THAT WORKS.</h2>
-						<h3>That‘s Bellaworks.</h3>
+					<?php $post = get_post(36); 
+							setup_postdata( $post );
+ 
+								$herotext = get_field('hero_text');
+								$herosmall = get_field('hero_small');
+ 
+							wp_reset_postdata(); ?>
+						<h2><?php echo $herotext; ?></h2>
+						<h3><?php echo $herosmall; ?></h3>
 					</section>
 					<section class="image slideInRight wow js-blocks">
 						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket.png">
