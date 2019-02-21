@@ -158,7 +158,7 @@ $block_3_text = get_field('block_3_text');
 						<h3><?php echo $block_1_title; ?></h3>
 						<p class="title"><?php echo $block_1_subtitle; ?></p>
 						<p class="desc">
-							<?php echo $block_1_copy; ?>
+							<?php echo $block_1_text; ?>
 						</p>
 					</div>
 				</div>
@@ -172,7 +172,7 @@ $block_3_text = get_field('block_3_text');
 						<h3><?php echo $block_2_title; ?></h3>
 						<p class="title"><?php echo $block_2_subtitle; ?></p>
 						<p class="desc">
-							<?php echo $block_2_copy; ?>
+							<?php echo $block_2_text; ?>
 						</p>
 					</div>
 					
@@ -187,7 +187,7 @@ $block_3_text = get_field('block_3_text');
 						<h3><?php echo $block_3_title; ?></h3>
 						<p class="title"><?php echo $block_3_subtitle; ?></p>
 						<p class="desc">
-							<?php echo $block_3_copy; ?>
+							<?php echo $block_3_text; ?>
 						</p>
 					</div>
 				</div>
