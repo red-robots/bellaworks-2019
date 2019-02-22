@@ -164,23 +164,23 @@
 	    		right: 10%;
     		}
     		@media screen and (min-width: $midwidth) {
-    			bottom: -0px;
+    			bottom: -80px;
 	    		right: 10%;
     		}
     		@media screen and (min-width: $deskwidth) {
-    			bottom: -50px;
+    			bottom: -100px;
 	    		right: 10%;
     		}
     		@media screen and (min-width: $largewidth) {
-    			bottom: -50px;
+    			bottom: -100px;
 	    		right: 10%;
     		}
     		@media screen and (min-width: $xlargewidth) {
-    			bottom: -70px;
+    			bottom: -130px;
 	    		right: 10%;
     		}
     		@media screen and (min-width: $xxlargewidth) {
-    			bottom: -90px;
+    			bottom: -140px;
 	    		right: 10%;
     		}
 		}
@@ -205,23 +205,23 @@ section.hero {
 		position: relative;
 		-webkit-transform: translate3d(0,0,0);
 		@media screen and (min-width: $tabwidth) {
-			font-size: 3rem;
+			font-size: 2.8rem;
 
 		}
 		@media screen and (min-width: $midwidth) {
-			font-size: 3.8rem;
+			font-size: 3.3rem;
 		}
 		@media screen and (min-width: $deskwidth) {
-			font-size: 5.2rem;
+			font-size: 4.8rem;
 		}
 		@media screen and (min-width: $largewidth) {
 			font-size: 6rem;
 		}
 		@media screen and (min-width: $xlargewidth) {
-			font-size: 7rem;
+			// font-size: 7rem;
 		}
 		@media screen and (min-width: $xxlargewidth) {
-			font-size: 7rem;
+			// font-size: 7rem;
 		}
 	}
 	h3 {
@@ -357,7 +357,7 @@ section.about-what-we-do {
 
 	}
 	.third {
-		padding: 0 .92308em;
+		padding: 0 1.1em;
 		margin: 0 0 50px 0;
 	}
 	.icon {
