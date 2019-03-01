@@ -39,10 +39,21 @@ get_header(); ?>
 			
 
 			<section class="secondary-hero fadeInUp wow">
-				<section class="desc">
+				
+				<section class="icon">
+					<div class="icon">
+						<img src="<?php bloginfo('template_url'); ?>/images/icon_yes.png">
+					</div>
+				</section>
+				<section class="getitright">
 					<h2><?php echo $second_block_copy_lead; ?></h2>
 					<?php echo $second_block_copy; ?>
 				</section>
+			</section>
+
+
+			<section class="secondary-hero fadeInUp wow">
+				
 				<section class="offer">
 					<?php get_template_part('template-parts/offer'); ?>
 				</section>

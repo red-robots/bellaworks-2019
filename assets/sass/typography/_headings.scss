@@ -59,10 +59,12 @@ header.entry-header {
 		font-size: .9rem;
 		font-weight: 700;
 	}
-	p.page-description {
+	p.page-description,
+	h1.page-description {
 		font-size: 3rem;
 		font-weight: 700;
 		margin: 1.5rem 0 1.5rem;
+		text-transform: capitalize;
 		@media screen and (min-width: $tabwidth) {
 			font-size: 3rem;
 		}
@@ -92,7 +94,7 @@ header.entry-header {
 		color: $color-davy-grey;
 		text-transform: capitalize;
 		@media screen and (min-width: $tabwidth) {
-			width: 70%;
+			width: 100%;
 			margin: -80px 0 20px 0;
 		}
 		@media screen and (min-width: $deskwidth) {

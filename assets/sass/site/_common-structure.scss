@@ -138,6 +138,7 @@ body {
       // background: $color-mandarin;
       background: rgba(#fff, .1);
       border-radius: 1.625rem;
+      &.hero {background: $color-mandarin;}
       .icon {
         @include btn-transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: absolute;

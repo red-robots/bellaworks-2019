@@ -1651,13 +1651,13 @@ footer.site-footer h3.title::after,footer.site-footer h4.title::after,footer.sit
 @media screen and (min-width:767px){footer.site-footer h3.title::after,footer.site-footer h4.title::after,footer.site-footer h5.title::after,footer.site-footer h6.title::after{display:block}
 }header.entry-header{width:100%;float:left;color:#3689b4;line-height:1.1}
 header.entry-header h1.entry-title{font-size:.9rem;font-weight:700}
-header.entry-header p.page-description{font-size:3rem;font-weight:700;margin:1.5rem 0 1.5rem}
-@media screen and (min-width:767px){header.entry-header p.page-description{font-size:3rem}
-}@media screen and (min-width:1200px){header.entry-header p.page-description{font-size:4rem}
+header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem;font-weight:700;margin:1.5rem 0 1.5rem;text-transform:capitalize}
+@media screen and (min-width:767px){header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem}
+}@media screen and (min-width:1200px){header.entry-header p.page-description,header.entry-header h1.page-description{font-size:4rem}
 }header.entry-header h1.single-title{font-weight:700;font-size:2.5rem;color:#4e5356;text-transform:capitalize}
 @media screen and (min-width:767px){header.entry-header h1.single-title{width:70%}
 }header.entry-header h1.services-title{font-weight:700;font-size:2.5rem;color:#4e5356;text-transform:capitalize}
-@media screen and (min-width:767px){header.entry-header h1.services-title{width:70%;margin:-80px 0 20px 0}
+@media screen and (min-width:767px){header.entry-header h1.services-title{width:100%;margin:-80px 0 20px 0}
 }header.entry-header .service-title{font-weight:700;font-size:1rem;color:#3689b4;text-transform:capitalize}
 @media screen and (min-width:767px){header.entry-header .service-title{width:70%}
 }.date{color:rgba(96,110,117,0.6);font-weight:700;margin:0 0 10px 0;font-size:.9rem}
@@ -1931,6 +1931,7 @@ body{font-family:futura-pt,sans-serif}
 .button{position:relative;display:inline-block;cursor:pointer;outline:0;border:0;margin:20px 0;vertical-align:middle;text-decoration:none;background:transparent;padding:0;font-size:inherit;font-family:inherit;border-radius:1.625rem;background-color:#3689b4}
 .button .action{width:15rem;height:auto}
 .button .action .circle{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);position:relative;margin:0;width:3rem;height:3rem;background:rgba(255,255,255,0.1);border-radius:1.625rem}
+.button .action .circle.hero{background:#f37748}
 .button .action .circle .icon{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);position:absolute;top:0;bottom:0;margin:auto;background:#3689b4}
 .button .action .circle .icon.arrow{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);left:.625rem;width:1.125rem;height:.125rem;background:0}
 .button .action .circle .icon.arrow::before{position:absolute;content:'';top:-0.25rem;right:.0625rem;width:.625rem;height:.625rem;border-top:.125rem solid #fff;border-right:.125rem solid #fff;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
@@ -2030,18 +2031,26 @@ ul.side-social a:hover,ul.side-social i:hover{color:#4e5356}
 @media screen and (min-width:767px){section.secondary-hero h2{font-size:2.3rem}
 }section.secondary-hero h3{font-size:1.2rem;color:#3689b4}
 @media screen and (min-width:1200px){section.secondary-hero h3{margin:0 auto}
-}section.secondary-hero p{font-size:1.2rem;color:#3689b4}
+}section.secondary-hero p{font-size:1.8rem;color:#3689b4}
 @media screen and (min-width:1200px){section.secondary-hero p{margin:0 auto}
+}section.secondary-hero section.icon{width:100%;position:relative;float:left}
+@media screen and (min-width:767px){section.secondary-hero section.icon{width:30%;padding:30px}
+}@media screen and (min-width:1200px){section.secondary-hero section.icon{padding:50px}
 }section.secondary-hero section.desc{width:100%;position:relative;float:left}
 @media screen and (min-width:767px){section.secondary-hero section.desc{width:50%;padding:30px}
 }@media screen and (min-width:1200px){section.secondary-hero section.desc{padding:50px}
-}section.secondary-hero section.offer{width:100%;position:relative;float:right;background-color:#eee;padding:30px}
+}section.secondary-hero section.getitright{width:100%;position:relative;float:left}
+@media screen and (min-width:767px){section.secondary-hero section.getitright{width:70%;padding:30px}
+}@media screen and (min-width:1200px){section.secondary-hero section.getitright{padding:50px}
+}section.secondary-hero section.offer{width:100%;position:relative;float:right;padding:30px}
 @media screen and (min-width:767px){section.secondary-hero section.offer{width:50%;padding:30px}
 }@media screen and (min-width:1200px){section.secondary-hero section.offer{padding:50px}
 }section.secondary-hero section.offer p{color:#4e5356}
 section.secondary-hero section.offer h3{font-size:1.8rem;color:#002c4c;margin:0 0 15px 0}
 @media screen and (min-width:1200px){section.secondary-hero section.offer h3{margin:0 auto}
-}section.about-what-we-do{width:100%;float:left;padding:30px 0 100px 0}
+}section.secondary-hero .icon{width:80%;margin:auto}
+section.secondary-hero .icon img{width:100%}
+section.about-what-we-do{width:100%;float:left;padding:30px 0 100px 0}
 section.about-what-we-do .third{padding:0 1.1em;margin:0 0 50px 0}
 section.about-what-we-do .icon{width:40%;margin:0 auto 80px auto}
 @media screen and (min-width:767px){section.about-what-we-do .icon{width:30%}

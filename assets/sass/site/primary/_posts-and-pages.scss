@@ -294,7 +294,7 @@ section.secondary-hero {
 		}
 	}
 	p {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		color: $color-light-blue;
 		@media screen and (min-width: $tabwidth) {
 			
@@ -302,6 +302,18 @@ section.secondary-hero {
 		@media screen and (min-width: $deskwidth) {
 			// width: 60%;
 			margin: 0 auto;
+		}
+	}
+	section.icon {
+		width: 100%;
+		position: relative;
+		float: left;
+		@media screen and (min-width: $tabwidth) {
+			width: 30%;
+			padding: 30px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 50px;
 		}
 	}
 	section.desc {
@@ -316,11 +328,23 @@ section.secondary-hero {
 			padding: 50px;
 		}
 	}
+	section.getitright {
+		width: 100%;
+		position: relative;
+		float: left;
+		@media screen and (min-width: $tabwidth) {
+			width: 70%;
+			padding: 30px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 50px;
+		}
+	}
 	section.offer {
 		width: 100%;
 		position: relative;
 		float: right;
-		background-color: #eee;
+		// background-color: #eee;
 		padding: 30px;
 		@media screen and (min-width: $tabwidth) {
 			width: 50%;
@@ -333,17 +357,24 @@ section.secondary-hero {
 			color: $color-davy-grey;
 		}
 		h3 {
-		font-size: 1.8rem;
-		color: $color-dark-blue;
-		margin: 0 0 15px 0;
-		@media screen and (min-width: $tabwidth) {
-			
-		}
-		@media screen and (min-width: $deskwidth) {
-			// width: 60%;
-			margin: 0 auto;
+			font-size: 1.8rem;
+			color: $color-dark-blue;
+			margin: 0 0 15px 0;
+			@media screen and (min-width: $tabwidth) {
+				
+			}
+			@media screen and (min-width: $deskwidth) {
+				// width: 60%;
+				margin: 0 auto;
+			}
 		}
 	}
+	.icon {
+		width: 80%;
+		margin: auto;
+		img {
+			width: 100%;
+		}
 	}
 }
 section.about-what-we-do {

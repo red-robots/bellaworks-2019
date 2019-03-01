@@ -13,9 +13,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="wrapper">
 				<?php
-				while ( have_posts() ) : the_post(); ?>
-					<header class="entry-header">
+				while ( have_posts() ) : the_post(); 
+
+				//get_template_part('inc/title');
+
+				?>
+					
+
+					<header class="entry-header services">
 						<span class="service-title">SERVICES</span>
+						<h1 class="page-description">
+							<?php the_title(); ?>
+						</h1>
 					</header><!-- .entry-header -->
 
 					<?php if( has_post_thumbnail() ) { ?>
@@ -26,9 +35,7 @@ get_header(); ?>
 
 					<div class="post-content">
 						<section class="post">
-							<header class="entry-header">
-								<?php the_title( '<h1 class="services-title">', '</h1>' ); ?>
-							</header><!-- .entry-header -->
+							
 							<article class="post">
 								<?php the_content(); ?>
 							</article>

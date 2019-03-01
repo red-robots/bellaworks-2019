@@ -65,6 +65,16 @@
 							wp_reset_postdata(); ?>
 						<h2><?php echo $herotext; ?></h2>
 						<h3><?php echo $herosmall; ?></h3>
+						<div class="button">
+							<div class="action">
+							<a href="<?php bloginfo('url'); ?>/lets-do-this">	
+								<div class="circle hero">
+							      <span class="icon arrow"></span>
+							    </div>
+								<p class="button-text">Start Now.</p>
+							</a>
+							</div>
+						</div>
 					</section>
 					<section class="image slideInRight wow js-blocks">
 						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket.png">
