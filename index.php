@@ -52,12 +52,12 @@ get_header(); ?>
 			</section>
 
 
-			<section class="secondary-hero fadeInUp wow">
+			
 				
 				<section class="offer">
 					<?php get_template_part('template-parts/offer'); ?>
 				</section>
-			</section>
+			
 
 
 			<section class="services color-light-blue">

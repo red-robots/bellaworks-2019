@@ -340,35 +340,7 @@ section.secondary-hero {
 			padding: 50px;
 		}
 	}
-	section.offer {
-		width: 100%;
-		position: relative;
-		float: right;
-		// background-color: #eee;
-		padding: 30px;
-		@media screen and (min-width: $tabwidth) {
-			width: 50%;
-			padding: 30px;
-		}
-		@media screen and (min-width: $deskwidth) {
-			padding: 50px;
-		}
-		p {
-			color: $color-davy-grey;
-		}
-		h3 {
-			font-size: 1.8rem;
-			color: $color-dark-blue;
-			margin: 0 0 15px 0;
-			@media screen and (min-width: $tabwidth) {
-				
-			}
-			@media screen and (min-width: $deskwidth) {
-				// width: 60%;
-				margin: 0 auto;
-			}
-		}
-	}
+	
 	.icon {
 		width: 80%;
 		margin: auto;
@@ -421,6 +393,35 @@ section.about-what-we-do {
 		li {
 			font-size: .9rem;
 			font-weight: 600;
+		}
+	}
+}
+section.offer {
+	width: 100%;
+	position: relative;
+	float: right;
+	background-color: #eee;
+	padding: 30px;
+	@media screen and (min-width: $tabwidth) {
+		// width: 50%;
+		padding: 30px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		padding: 50px;
+	}
+	p {
+		color: $color-davy-grey;
+	}
+	h3 {
+		font-size: 1.8rem;
+		color: $color-dark-blue;
+		margin: 0 0 15px 0;
+		@media screen and (min-width: $tabwidth) {
+			
+		}
+		@media screen and (min-width: $deskwidth) {
+			// width: 60%;
+			margin: 0 auto;
 		}
 	}
 }
