@@ -55,7 +55,7 @@
 			</header><!-- #masthead -->
 			<div class="herowrap colflex">
 				<div class="home-flex">
-					<section class="hero slideInLeft wow js-blocks">
+					<section class="hero   js-blocks">
 					<?php $post = get_post(36); 
 							setup_postdata( $post );
  
@@ -68,7 +68,7 @@
 						<div class="button">
 							<div class="action">
 							<a href="<?php bloginfo('url'); ?>/lets-do-this">	
-								<div class="circle hero">
+								<div class="circle hero wow bounceInLeft" data-wow-delay="1s">
 							      <span class="icon arrow"></span>
 							    </div>
 								<p class="button-text">Start Now.</p>
@@ -76,12 +76,18 @@
 							</div>
 						</div>
 					</section>
-					<section class="image slideInRight wow js-blocks">
+					<section class="image  wow fadeIn js-blocks">
 						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket.png">
 					</section>
 				</div>
 			</div>
+			<div class="hinter">
+				<div class="icon wow bounceInUp" data-wow-delay="1.5s" >
+					<i class="fas fa-chevron-down"></i>
+				</div>
+			</div>
 		</div>
+		
 	<?php } else { ?>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="wrapper">

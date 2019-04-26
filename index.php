@@ -40,11 +40,6 @@ get_header(); ?>
 
 			<section class="secondary-hero fadeInUp wow">
 				
-				<section class="icon">
-					<div class="icon">
-						<img src="<?php bloginfo('template_url'); ?>/images/icon_yes.png">
-					</div>
-				</section>
 				<section class="getitright">
 					<h2><?php echo $second_block_copy_lead; ?></h2>
 					<?php echo $second_block_copy; ?>
@@ -55,7 +50,15 @@ get_header(); ?>
 			
 				
 				<section class="offer">
-					<?php get_template_part('template-parts/offer'); ?>
+					<div class="the-pitch">
+						<div class="paper">
+							<img src="<?php bloginfo('template_url'); ?>/images/a-great-website-starts-here.png">
+						</div>
+						<div class="copy">
+							<?php get_template_part('template-parts/offer'); ?>
+						</div>
+					</div>
+					
 				</section>
 			
 
@@ -63,7 +66,7 @@ get_header(); ?>
 			<section class="services color-light-blue">
 				<h2 class="home-service">Services</h2>
 				<div class="service-wrap">
-					<div class="third third-pad">
+					<div class="third third-pad digital">
 						
 						
 						<?php
@@ -93,7 +96,7 @@ get_header(); ?>
 							</ul>
 						<?php endif; ?>
 					</div>
-					<div class="third third-pad  ">
+					<div class="third third-pad  branding">
 						<?php
 							$wp_query = new WP_Query();
 							$wp_query->query(array(
@@ -120,7 +123,7 @@ get_header(); ?>
 							</ul>
 						<?php endif; ?>
 					</div>
-					<div class="third third-pad">
+					<div class="third third-pad custom">
 						<?php
 							$wp_query = new WP_Query();
 							$wp_query->query(array(

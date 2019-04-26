@@ -6,13 +6,38 @@
 	height: 100vh;
 	background-color: $color-light-blue;
 	margin: 0;
+	position: relative;
 	@media screen and (min-width: $tabwidth) {
 
 	}
 	@media screen and (min-width: $deskwidth) {
 
 	}
+	.hinter {
+		width: 100%;
+		text-align: center;
+		width: 100%;
+		float: left;
+		background-color: $color-light-blue-dark;
+		color: #fff;
+		height: 10vh;
+		font-size: 40px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		clear: both;
+		display: none;
+		@media screen and (min-width: $tabwidth) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: block;
+		}
+	}
+
 }
+
 .hentry {
 	margin: 0 0 1.5em;
 }
@@ -255,8 +280,9 @@ section.secondary-hero {
 	width: 100%;
 	clear: both;
 	padding: 50px 20px;
-	background-color: #fff;
+	// background-color: #fff;
 	text-align: left;
+	float: left;
 	// text-transform: uppercase;
 	font-family: futura-pt, sans-serif;
 	font-weight: 700;
@@ -264,8 +290,11 @@ section.secondary-hero {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: stretch;
+		justify-content: flex-start;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-image: url(images/get-it-right-online.png);
+		background-size: cover;
 	}
 	@media screen and (min-width: $deskwidth) {
 		
@@ -276,7 +305,7 @@ section.secondary-hero {
 		line-height: 1.2;
 		margin: 0 0 10px 0;
 		@media screen and (min-width: $tabwidth) {
-			font-size: 2.3rem;
+			font-size: 1.8rem;
 		}
 		@media screen and (min-width: $deskwidth) {
 			
@@ -294,8 +323,9 @@ section.secondary-hero {
 		}
 	}
 	p {
-		font-size: 1.8rem;
+		font-size: 1rem;
 		color: $color-light-blue;
+		font-weight: 400;
 		@media screen and (min-width: $tabwidth) {
 			
 		}
@@ -333,11 +363,14 @@ section.secondary-hero {
 		position: relative;
 		float: left;
 		@media screen and (min-width: $tabwidth) {
-			width: 70%;
-			padding: 30px;
+			width: 45%;
+			padding: 30px 0;
+			margin: 5%;
+			border-bottom: 1px solid $color-mandarin;
 		}
 		@media screen and (min-width: $deskwidth) {
-			padding: 50px;
+			padding: 20px 0 20px 0; 
+			
 		}
 	}
 	
@@ -400,14 +433,17 @@ section.offer {
 	width: 100%;
 	position: relative;
 	float: right;
-	background-color: #eee;
+	background-color: #fff;
 	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	@media screen and (min-width: $tabwidth) {
 		// width: 50%;
 		padding: 30px;
 	}
 	@media screen and (min-width: $deskwidth) {
-		padding: 50px;
+		padding: 80px 0;
 	}
 	p {
 		color: $color-davy-grey;
@@ -422,6 +458,30 @@ section.offer {
 		@media screen and (min-width: $deskwidth) {
 			// width: 60%;
 			margin: 0 auto;
+		}
+	}
+}
+.the-pitch {
+	width: 100%;
+	margin: 0 auto;
+	@media screen and (min-width: $tabwidth) {
+		width: 75%;
+	}
+	.paper {
+		width: 40%;
+		margin: 20px auto;
+		@media screen and (min-width: $tabwidth) {
+			width: 20%;
+			float:left;
+			margin: 0;
+		}
+
+	}
+	.copy {
+		width: 100%;
+		float: right;
+		@media screen and (min-width: $tabwidth) {
+			width: 75%;
 		}
 	}
 }
@@ -811,6 +871,20 @@ section.services {
 			flex-wrap: nowrap;
 			justify-content: space-around;
 			align-items: stretch;
+		}
+		.digital {
+			background-image: url(images/services-digital.png);
+		}
+		.branding {
+			background-image: url(images/services-branding.png);
+		}
+		.custom {
+			background-image: url(images/services-custom.png);
+		}
+		.digital, .branding, .custom {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% auto;
 		}
 	}
 	ul {
