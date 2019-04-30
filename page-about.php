@@ -209,6 +209,7 @@ $block_3_text = get_field('block_3_text');
 						$superpower = get_field('superpower');
 						$imgRobot = get_field('image_robot');
 						$imgReal = get_field('photo');
+						$do = get_field('what_they_do');
 
 					 ?>
 
@@ -223,6 +224,11 @@ $block_3_text = get_field('block_3_text');
 					 		</div>
 					 		<div class="info">
 					 			<h3><?php the_title(); ?></h3>
+					 			<?php if( $do ) { ?>
+						 			<div class="superpower">
+						 				<?php echo $do; ?>
+						 			</div>
+					 			<?php } ?>
 					 			<?php if( $superpower ) { ?>
 						 			<div class="superpower">
 						 				<span class="superpower">Superpower</span>

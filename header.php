@@ -61,6 +61,7 @@
  
 								$herotext = get_field('hero_text');
 								$herosmall = get_field('hero_small');
+								$videoLink = get_field('vid_link');
  
 							wp_reset_postdata(); ?>
 						<h2><?php echo $herotext; ?></h2>
@@ -78,6 +79,11 @@
 					</section>
 					<section class="image  wow fadeIn js-blocks">
 						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket.png">
+						<?php if( $videoLink ) { ?>
+							<div class="video-click">
+								<a href="<?php echo $videoLink; ?>">i</a>
+							</div>
+						<?php } ?>
 					</section>
 				</div>
 			</div>

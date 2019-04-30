@@ -39,6 +39,7 @@ get_header(); ?>
 							<article class="post">
 								<?php the_content(); ?>
 							</article>
+							<?php get_template_part('template-parts/cta-service'); ?>
 						</section>
 						
 						<?php get_template_part('template-parts/single-side-service'); ?>
