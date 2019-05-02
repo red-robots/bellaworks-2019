@@ -31,7 +31,7 @@ get_header(); ?>
 						<div class="third js-blocks">
 							<div class="image">
 								<a href="<?php the_permalink(); ?>" >
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('blog'); ?>
 								</a>
 							</div>
 							<div class="content">
