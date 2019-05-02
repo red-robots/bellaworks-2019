@@ -214,28 +214,30 @@ $block_3_text = get_field('block_3_text');
 					 ?>
 
 					 	<div class="person">
-					 		<div class="pic">
-					 			<div class="robot">
-					 				<img src="<?php echo $imgReal['url']; ?>"  alt="<?php echo $imgReal['alt']; ?>">
-					 			</div>
-					 			<div class="real">
-					 				<img src="<?php echo $imgReal['url']; ?>"  alt="<?php echo $imgReal['alt']; ?>">
-					 			</div>
-					 		</div>
-					 		<div class="info">
-					 			<h3><?php the_title(); ?></h3>
-					 			<?php if( $do ) { ?>
-						 			<div class="superpower">
-						 				<?php echo $do; ?>
+					 		<a href="<?php the_permalink(); ?>">
+						 		<div class="pic">
+						 			<div class="robot">
+						 				<img src="<?php echo $imgReal['url']; ?>"  alt="<?php echo $imgReal['alt']; ?>">
 						 			</div>
-					 			<?php } ?>
-					 			<?php if( $superpower ) { ?>
-						 			<div class="superpower">
-						 				<span class="superpower">Superpower</span>
-						 				<?php echo $superpower; ?>
+						 			<div class="real">
+						 				<img src="<?php echo $imgReal['url']; ?>"  alt="<?php echo $imgReal['alt']; ?>">
 						 			</div>
-					 			<?php } ?>
-					 		</div>
+						 		</div>
+						 		<div class="info">
+						 			<h3><?php the_title(); ?></h3>
+						 			<?php if( $do ) { ?>
+							 			<div class="superpower">
+							 				<?php echo $do; ?>
+							 			</div>
+						 			<?php } ?>
+						 			<?php if( $superpower ) { ?>
+							 			<div class="superpower">
+							 				<span class="superpower">Superpower</span>
+							 				<?php echo $superpower; ?>
+							 			</div>
+						 			<?php } ?>
+						 		</div>
+					 		</a>
 					 	</div>
 
 					<?php endwhile; ?>

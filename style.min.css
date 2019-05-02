@@ -2081,15 +2081,17 @@ section.offer h3{font-size:1.8rem;color:#002c4c;margin:0 0 15px 0}
 }.about-journey .icon img{width:100%;margin:0 auto}
 section.our-staff{width:100%;position:relative;float:left;padding:50px 0}
 @media screen and (min-width:767px){section.our-staff .flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
-}section.our-staff .person{width:90%;padding:3%;margin:0 0 30px 0}
+}section.our-staff .person{width:90%;padding:3%;margin:0 0 30px 0;-webkit-transition:all ease .2s;transition:all ease .2s}
 @media screen and (min-width:767px){section.our-staff .person{width:26%;overflow:hidden}
-}section.our-staff .person:hover .robot{opacity:0}
+}section.our-staff .person:hover{box-shadow:0 0 13px 0 rgba(0,0,0,0.21)}
+section.our-staff .person:hover .robot{opacity:0}
 section.our-staff .person .pic{width:100%;position:relative;float:left}
 section.our-staff .person .pic .robot,section.our-staff .person .pic .real{width:100%}
 section.our-staff .person .pic .robot img,section.our-staff .person .pic .real img{width:100%;float:left}
 section.our-staff .person .pic .robot{-webkit-filter:grayscale(1);filter:grayscale(1);z-index:1;position:absolute;bottom:0;left:0;-webkit-transition:all ease .2s;transition:all ease .2s}
 section.our-staff .person .pic .real{z-index:2}
 section.our-staff .person .info{width:100%}
+section.our-staff .person .info h3{margin:10px 0 10px 0;float:left}
 section.contact .contact1{color:rgba(255,255,255,0.8);margin-bottom:40px}
 section.contact .info{margin:0 0 30px 0}
 section.contact .start{text-align:center}
