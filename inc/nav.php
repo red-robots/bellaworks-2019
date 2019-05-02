@@ -5,7 +5,7 @@
 	<nav class="mobilemenu">
 	  <ul class="main">
 	    <li>
-	    	<a href="<?php bloginfo('url'); ?>/about">About Us</a>
+	    	<a href="<?php bloginfo('url'); ?>/about-us">About Us</a>
 	    </li>
     	<li><a href="<?php bloginfo('url'); ?>/our-work">Our Work</a>
 	    	<!-- <ul class="dropdown">

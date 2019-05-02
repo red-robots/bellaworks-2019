@@ -82,6 +82,9 @@
 					</li>
 				</ul>
 			</section>
+			<div class="sitemap">
+				<a href="<?php bloginfo('url'); ?>/sitemap">sitemap</a>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
