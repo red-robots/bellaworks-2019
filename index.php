@@ -61,7 +61,37 @@ get_header(); ?>
 					
 				</section>
 			
+			<section class="latest-news">
+				<h2 class="home-service">Latest News</h2>
+				<?php
+							$wp_query = new WP_Query();
+							$wp_query->query(array(
+							'post_type'=>'post',
+							'posts_per_page' => 1,
+							'paged' => $paged,
+							// 'tax_query' => array(
+							// 	array(
+							// 		'taxonomy' => 'service_type', // your custom taxonomy
+							// 		'field' => 'slug',
+							// 		'terms' => array( 'web-design' ) // the terms (categories) you created
+							// 	)
+							// )
+						));
+						if ($wp_query->have_posts()) : 
+							while ($wp_query->have_posts()) : $wp_query->the_post() ?>
+						<div class="newsblock">
+							<a href="<?php the_permalink(); ?>">
+							<?php 
+								if( has_post_thumbnail() ) {
+									the_post_thumbnail('blog');
+								}
+							?>
+							<h2><?php the_title(); ?></h2>
 
+							</a>
+						</div>
+					<?php endwhile; endif; ?>
+			</section>
 
 			<section class="services color-light-blue">
 				<h2 class="home-service">Services</h2>

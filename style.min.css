@@ -2153,6 +2153,12 @@ section.services a:hover{color:rgba(255,255,255,0.5)}
 section.services h3{font-size:.85rem;margin:0 0 4px 0}
 section.services p{margin:0}
 section.services .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)}
+section.latest-news{width:100%;float:left;background-color:#efefef;padding:40px 0;text-align:center}
+section.latest-news h2{padding:0 0 20px 0;width:100%}
+section.latest-news .newsblock{width:90%;background-color:#fff;margin:10px auto;text-align:left;-webkit-transition:all ease .2s;transition:all ease .2s}
+@media screen and (min-width:1200px){section.latest-news .newsblock{width:40%}
+}section.latest-news .newsblock a{display:block;-webkit-transition:all ease .2s;transition:all ease .2s;padding:5%}
+section.latest-news .newsblock a:hover{box-shadow:0 0 13px 0 rgba(0,0,0,0.21)}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

@@ -944,6 +944,35 @@ section.services {
 		color: rgba(#fff, .7);
 	}
 }
+section.latest-news {
+	width: 100%;
+	float: left;
+	background-color: #efefef;
+	padding: 40px 0;
+	text-align: center;
+	h2 {
+		padding: 0 0 20px 0;
+		width: 100%;
+	}
+	.newsblock {
+		width: 90%;
+		background-color: #fff;
+		margin: 10px auto;
+		text-align: left;
+		@include transition(all ease .2s);
+		@media screen and (min-width: $deskwidth) {
+			width: 40%;
+		}
+		a {
+			display: block;
+			@include transition(all ease .2s);
+			padding: 5%;
+			&:hover {
+				@include boxshadow();
+			}
+		}
+	}
+}
 
 
 
