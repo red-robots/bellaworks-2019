@@ -119,7 +119,7 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
 						</div>
 					</section>
 					<section class="image  wow fadeIn js-blocks">
-						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket.png">
+						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket-new.png">
 						<?php if( $videoLink ) { ?>
 							<div class="video-click">
 								<a href="<?php echo $videoLink; ?>">i</a>
