@@ -27,7 +27,7 @@ get_header(); ?>
 					// specific post ID you want to pull
 	                $post = get_post(36); 
 	                setup_postdata( $post );
-		 				the_field('our_work_video'); 
+		 				//the_field('our_work_video'); 
 	            	wp_reset_postdata();
 	            ?>
 	        	</div>
