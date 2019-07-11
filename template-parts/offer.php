@@ -24,6 +24,9 @@ $offer_button_text = get_field('offer_button_text', 'option');
 		<h2><?php echo $offerTitle; ?></h2>
 		<div class="form">
 			<?php echo do_shortcode('[gravityform id="9" title="false" description="true"]'); ?>
+			<div class="alt-down">
+				<a href="<?php bloginfo('url'); ?>/share">Just give me the download</a>
+			</div>
 		</div>
 	</div>
 </div>

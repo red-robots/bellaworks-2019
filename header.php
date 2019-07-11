@@ -110,22 +110,22 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
 						<div class="button">
 							<div class="action">
 							<a href="<?php bloginfo('url'); ?>/lets-do-this">	
-								<div class="circle hero wow bounceInLeft" data-wow-delay="1s">
+								<div class="circle hero wow bounceIn" data-wow-delay="1s">
 							      <span class="icon arrow"></span>
 							    </div>
-								<p class="button-text">Start Now.</p>
+								<p class="button-text">Get a Quote</p>
 							</a>
 							</div>
 						</div>
 					</section>
-					<section class="image  wow fadeIn js-blocks">
+					<!-- <section class="image  wow fadeIn js-blocks">
 						<img src="<?php bloginfo('template_url'); ?>/images/web-rocket-new.png">
 						<?php if( $videoLink ) { ?>
 							<div class="video-click">
 								<a href="<?php echo $videoLink; ?>">i</a>
 							</div>
 						<?php } ?>
-					</section>
+					</section> -->
 				</div>
 			</div>
 			<div class="hinter">

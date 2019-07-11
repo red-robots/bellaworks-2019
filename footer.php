@@ -16,14 +16,14 @@
 	<footer id="colophon" class="site-footer color-davy-grey" role="contentinfo">
 		<div class="third third-pad color-davy-dark-grey  js-blocks">
 			<h3>Are you ready?</h3>
-			<p>Let's help you grow your buisness.</p>
+			<p>Let's help you grow your business.</p>
 			<div class="button">
 				<div class="action">
 				<a href="<?php bloginfo('url'); ?>/lets-do-this">	
 					<div class="circle">
 				      <span class="icon arrow"></span>
 				    </div>
-					<p class="button-text">I'm Ready.</p>
+					<p class="button-text">Get a Quote.</p>
 				</a>
 				</div>
 			</div>

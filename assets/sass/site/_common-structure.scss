@@ -41,7 +41,14 @@ body {
 		/*width: 1200px;*/
 	}
 }
-
+.alt-down a {
+	width: auto;
+	line-height: 2;
+    min-height: 2rem;
+	background-color: #333;
+	padding: 20px 35px;
+	color: rgba(#fff, .7);
+}
 .widget-area {
 	width: 100%;
 	margin: 0px auto;

@@ -33,7 +33,7 @@
 						<div class="circle">
 					      <span class="icon arrow"></span>
 					    </div>
-						<p class="button-text blue">I'm Ready to start.</p>
+						<p class="button-text blue">Get a Quote.</p>
 					</a>
 				</div>
 			</div>

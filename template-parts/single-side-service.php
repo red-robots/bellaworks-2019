@@ -12,7 +12,7 @@
 						<div class="circle">
 					      <span class="icon arrow"></span>
 					    </div>
-						<p class="button-text blue">Let's Start</p>
+						<p class="button-text blue">Get a Quote.</p>
 					</a>
 				</div>
 			</div>
