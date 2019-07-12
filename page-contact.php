@@ -26,13 +26,13 @@ get_header(); ?>
 				<div class="half half-pad color-light-blue-dark contact1">
 					
 					<section class="info">
-						<h3>Stop by.</h3>
+						<h3>Visit Us.</h3>
 						Bellaworks Web Design<br>
 						3120 North Davidson St, Unit 200<br>
 						Charlotte, North Carolina 28205<br>
 					</section>
 					<section class="info">
-						<h3>How to contact.</h3>
+						<h3>Call or Email.</h3>
 						<b>P</b> 704.375.0831<br>
 						<b>M </b>info@bellaworksweb.com
 					</section>
@@ -68,7 +68,7 @@ get_header(); ?>
 								<div class="circle">
 							      <span class="icon arrow"></span>
 							    </div>
-								<p class="button-text">Get Started.</p>
+								<p class="button-text">Contact Us.</p>
 							</a>
 						</div>
 					</div>
