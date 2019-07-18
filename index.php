@@ -63,11 +63,12 @@ get_header(); ?>
 			
 			<section class="latest-news">
 				<h2 class="home-service">Latest News</h2>
+				<div class="newswrap">
 				<?php
 							$wp_query = new WP_Query();
 							$wp_query->query(array(
 							'post_type'=>'post',
-							'posts_per_page' => 1,
+							'posts_per_page' => 3,
 							'paged' => $paged,
 							// 'tax_query' => array(
 							// 	array(
@@ -91,6 +92,7 @@ get_header(); ?>
 							</a>
 						</div>
 					<?php endwhile; endif; ?>
+					</div>
 			</section>
 
 			<section class="services color-light-blue">

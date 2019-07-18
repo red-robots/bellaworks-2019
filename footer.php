@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer color-davy-grey" role="contentinfo">
 		<div class="third third-pad color-davy-dark-grey  js-blocks">
 			<h3>Are you ready?</h3>
-			<p>Let's help you grow your business.</p>
+			<!-- <p>Let's help you grow your business.</p> -->
 			<div class="button">
 				<div class="action">
 				<a href="<?php bloginfo('url'); ?>/lets-do-this">	
@@ -33,20 +33,31 @@
 			<h3 class="title">Our Services</h3>
 			<ul class="nice-list">
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
+					<a href="<?php bloginfo('url'); ?>/service/wordpress-development/">
+					Website Design
+					</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Web Development</a>
+					<a href="<?php bloginfo('url'); ?>/service/wordpress-development/">
+					Web Development
+					</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Search Engine Optimization (SEO)</a>
+					<a href="<?php bloginfo('url'); ?>/service/copywriting/">
+					Content Writing Services
+					</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Branding &amp; Strategy</a>
+					<a href="<?php bloginfo('url'); ?>/service/search-engine-optimization-seo/">
+					Search Engine Optimization (SEO)
+					</a>
 				</li>
 				<li>
-					<a href="<?php bloginfo('url'); ?>/web-design;">Social</a>
+					<a href="<?php bloginfo('url'); ?>/service/branding/">
+					Branding &amp; Strategy
+					</a>
 				</li>
+				
 				<!-- <li>
 					<a href="<?php bloginfo('url'); ?>/web-design;">Website Design</a>
 				</li> -->

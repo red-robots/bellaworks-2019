@@ -67,6 +67,7 @@ header.entry-header {
 		text-transform: capitalize;
 		@media screen and (min-width: $tabwidth) {
 			font-size: 3rem;
+			margin: 1.5rem 0 80px;
 		}
 		@media screen and (min-width: $deskwidth) {
 			font-size: 4rem;

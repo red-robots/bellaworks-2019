@@ -1652,7 +1652,7 @@ footer.site-footer h3.title::after,footer.site-footer h4.title::after,footer.sit
 }header.entry-header{width:100%;float:left;color:#3689b4;line-height:1.1}
 header.entry-header h1.entry-title{font-size:.9rem;font-weight:700}
 header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem;font-weight:700;margin:1.5rem 0 1.5rem;text-transform:capitalize}
-@media screen and (min-width:767px){header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem}
+@media screen and (min-width:767px){header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem;margin:1.5rem 0 80px}
 }@media screen and (min-width:1200px){header.entry-header p.page-description,header.entry-header h1.page-description{font-size:4rem}
 }header.entry-header h1.single-title{font-weight:700;font-size:2.5rem;color:#4e5356;text-transform:capitalize}
 @media screen and (min-width:767px){header.entry-header h1.single-title{width:70%}
@@ -2048,8 +2048,9 @@ section.hero{width:100%;color:#fff;margin:0 0 40px 0;text-align:center}
 }@media screen and (min-width:1200px){section.secondary-hero section.desc{padding:50px}
 }section.secondary-hero section.getitright{width:100%;position:relative;float:left}
 @media screen and (min-width:767px){section.secondary-hero section.getitright{width:85%;padding:30px 0;margin:5% auto;border-bottom:1px solid #f37748}
-}@media screen and (min-width:1200px){section.secondary-hero section.getitright{padding:20px 0 20px 0}
-}section.secondary-hero .icon{width:80%;margin:auto}
+}@media screen and (min-width:1200px){section.secondary-hero section.getitright{padding:20px 0 20px 0;width:55%;text-align:justify;text-justify:inter-word}
+}section.secondary-hero section.getitright p{margin:0 0 20px 0;line-height:1.1}
+section.secondary-hero .icon{width:80%;margin:auto}
 section.secondary-hero .icon img{width:100%}
 section.about-what-we-do{width:100%;float:left;padding:30px 0 100px 0}
 section.about-what-we-do .third{padding:0 1.1em;margin:0 0 50px 0}
@@ -2155,9 +2156,10 @@ section.services h3{font-size:.85rem;margin:0 0 4px 0}
 section.services p{margin:0}
 section.services .info{font-size:1.05rem;padding:0 0 8px 0;border-bottom:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)}
 section.latest-news{width:100%;float:left;background-color:#efefef;padding:40px 0;text-align:center}
-section.latest-news h2{padding:0 0 20px 0;width:100%}
+@media screen and (min-width:767px){section.latest-news .newswrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+}section.latest-news h2{padding:0 0 20px 0;width:100%}
 section.latest-news .newsblock{width:90%;background-color:#fff;margin:10px auto;text-align:left;-webkit-transition:all ease .2s;transition:all ease .2s}
-@media screen and (min-width:767px){section.latest-news .newsblock{width:40%}
+@media screen and (min-width:767px){section.latest-news .newsblock{width:28%;margin:2%}
 }section.latest-news .newsblock a{display:block;-webkit-transition:all ease .2s;transition:all ease .2s;padding:5%}
 section.latest-news .newsblock a:hover{box-shadow:0 0 13px 0 rgba(0,0,0,0.21)}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
