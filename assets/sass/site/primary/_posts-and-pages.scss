@@ -337,7 +337,7 @@ section.secondary-hero {
 		color: $color-dark-blue;
 		// color: #fff;
 		line-height: 1.2;
-		margin: 0 0 10px 0;
+		margin: 0 0 20px 0;
 		@media screen and (min-width: $tabwidth) {
 			font-size: 1.8rem;
 		}
@@ -367,7 +367,7 @@ section.secondary-hero {
 			
 		}
 		@media screen and (min-width: $midwidth) {
-			font-size: 2rem;
+			font-size: 1.6rem;
 		}
 		@media screen and (min-width: $deskwidth) {
 			// width: 60%;

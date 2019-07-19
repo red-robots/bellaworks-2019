@@ -2033,12 +2033,12 @@ section.hero{width:100%;color:#fff;margin:0 0 40px 0;text-align:center}
 }@media screen and (min-width:1200px){section.hero h3{font-size:2rem}
 }section.secondary-hero{width:100%;clear:both;padding:50px 20px;text-align:left;float:left;font-family:futura-pt,sans-serif;font-weight:700;background-repeat:no-repeat;background-image:url(images/tiling.png);background-size:cover}
 @media screen and (min-width:767px){section.secondary-hero{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-}section.secondary-hero h2{font-size:1.8rem;color:#002c4c;line-height:1.2;margin:0 0 10px 0}
+}section.secondary-hero h2{font-size:1.8rem;color:#002c4c;line-height:1.2;margin:0 0 20px 0}
 @media screen and (min-width:767px){section.secondary-hero h2{font-size:1.8rem}
 }section.secondary-hero h3{font-size:1.2rem}
 @media screen and (min-width:1200px){section.secondary-hero h3{margin:0 auto}
 }section.secondary-hero p{font-size:1.5rem;color:#002c4c;font-weight:400}
-@media screen and (min-width:900px){section.secondary-hero p{font-size:2rem}
+@media screen and (min-width:900px){section.secondary-hero p{font-size:1.6rem}
 }@media screen and (min-width:1200px){section.secondary-hero p{margin:0 auto}
 }section.secondary-hero section.icon{width:100%;position:relative;float:left}
 @media screen and (min-width:767px){section.secondary-hero section.icon{width:30%;padding:30px}
