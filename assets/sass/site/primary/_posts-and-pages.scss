@@ -477,6 +477,34 @@ section.about-what-we-do {
 		}
 	}
 }
+ul.servlist {
+	li {
+		width: 100%;
+	}
+	a {
+		padding: 7px 10px;
+		width: 100%;
+		position: relative;
+		display: block;
+		background-color: rgba($color-light-blue, .1);
+		border-bottom: 1px solid rgba($color-light-blue, .2);
+		@include transition(all ease .3s);
+		&:hover {
+			background-color: rgba($color-light-blue, 1);
+			color: #fff;
+			svg {
+				right: 5px;
+			}
+		}
+		svg {
+			width: auto;
+			position: absolute;
+			right: 10px;
+			@include transition(all ease .3s);
+			top: 10px;
+		}
+	}
+}
 section.offer {
 	width: 100%;
 	position: relative;

@@ -58,7 +58,7 @@ $block_3_text = get_field('block_3_text');
 						</div>
 						<h2><?php echo $service_1_title; ?></h2>
 						<?php echo $service_1_copy; ?>
-						<ul>
+						<ul class="servlist">
 						<?php
 							$wp_query = new WP_Query();
 							$wp_query->query(array(
@@ -76,7 +76,10 @@ $block_3_text = get_field('block_3_text');
 						if ($wp_query->have_posts()) : ?>
 						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<li>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>
+									<i class="fas fa-chevron-right"></i>
+								</a>
 							</li>
 							<?php endwhile; ?>
 						<?php endif; ?>
@@ -88,7 +91,7 @@ $block_3_text = get_field('block_3_text');
 						</div>
 						<h2><?php echo $service_2_title; ?></h2>
 						<?php echo $service_2_copy; ?>
-						<ul>
+						<ul class="servlist">
 						
 							<?php
 							$wp_query = new WP_Query();
@@ -107,7 +110,10 @@ $block_3_text = get_field('block_3_text');
 						if ($wp_query->have_posts()) : ?>
 						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<li>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>
+									<i class="fas fa-chevron-right"></i>
+								</a>
 							</li>
 							<?php endwhile; ?>
 						<?php endif; ?>
@@ -119,7 +125,7 @@ $block_3_text = get_field('block_3_text');
 						</div>
 						<h2><?php echo $service_3_title; ?></h2>
 						<?php echo $service_3_copy; ?>
-						<ul>
+						<ul class="servlist">
 						
 							<?php
 							$wp_query = new WP_Query();
@@ -138,7 +144,10 @@ $block_3_text = get_field('block_3_text');
 						if ($wp_query->have_posts()) : ?>
 						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<li>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>
+									<i class="fas fa-chevron-right"></i>
+								</a>
 							</li>
 							<?php endwhile; ?>
 						<?php endif; ?>
