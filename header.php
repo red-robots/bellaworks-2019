@@ -25,7 +25,7 @@
 <link rel="manifest" href="<?php bloginfo('template_url'); ?>/favicons/manifest.json">
 <link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
 
-
+<!-- DOB -->
 <?php the_field('google_analtyics','option'); ?>
 
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
