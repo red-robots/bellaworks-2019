@@ -71,9 +71,12 @@ get_header(); ?>
 
 					if( have_rows('clients') ) : while( have_rows('clients') ) : the_row();
 						$client = get_sub_field('client');
+						$clientLink = get_sub_field('link');
 					?>
 						<div class="client">
+							<a href="<?php echo $clientLink; ?>">
 							<img src="<?php echo $client['url']; ?>"  alt="<?php echo $client['alt']; ?>">
+							</a>
 						</div>
 					<?php 
 					endwhile;
