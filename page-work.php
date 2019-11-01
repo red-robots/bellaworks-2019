@@ -37,7 +37,7 @@ get_header(); ?>
 				$wp_query = new WP_Query();
 				$wp_query->query(array(
 				'post_type'=>'portfolio',
-				'posts_per_page' => 9
+				'posts_per_page' => 12
 			));
 				if ($wp_query->have_posts()) :  ?>
 				<section class="work">
