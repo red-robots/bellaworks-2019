@@ -51,16 +51,16 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
   "@context" : "http://schema.org",
   "@type" : "LocalBusiness",
   "name" : "Bellaworks Web Design",
-  "image" : "https://bellaworksweb.com/bw/wp-content/themes/bellaworks2017/images/logo-new.png",
+  "image" : "https://bellaworksweb.com/wp-content/themes/bellaworks2017/images/logo-new.png",
   "telephone" : "(704) 375-0831",
   "email" : "info@bellaworksweb.com",
   "address" : {
     "@type" : "PostalAddress",
-    "streetAddress" : "220 East Blvd #200a",
+    "streetAddress" : "3120 North Davidson St Unit 200",
     "addressLocality" : "Charlotte",
     "addressRegion" : "North Carolina",
     "addressCountry" : "United States",
-    "postalCode" : "28203"
+    "postalCode" : "28205"
   },
   "url" : "https://bellaworksweb.com/",
   "sameAs": [

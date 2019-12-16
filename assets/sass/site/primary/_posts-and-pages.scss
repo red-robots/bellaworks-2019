@@ -7,7 +7,7 @@
 	background-color: $color-light-blue;
 	margin: 0;
 	position: relative;
-	background-image: url(images/hero.png);
+	background-image: url(images/cityscape.png);
 		background-size: cover;
 	@media screen and (min-width: $tabwidth) {
 		
@@ -20,7 +20,7 @@
 		text-align: center;
 		width: 100%;
 		float: left;
-		background-color: $color-light-blue-dark;
+		//background-color: $color-light-blue-dark;
 		color: #fff;
 		height: 10vh;
 		font-size: 40px;
@@ -250,7 +250,9 @@ section.hero {
 		margin: 0 auto;
 	}
 	@media screen and (min-width: $deskwidth) {
-		
+		width: 70%;
+		text-align: left;
+		margin: 0 0 0 5%;
 	}
 	h2 {
 		// font-size: 3rem;
