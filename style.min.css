@@ -1437,6 +1437,7 @@ body{font-family:futura-pt,sans-serif}
 .logo,h1.logo{width:200px;clear:none;float:left;font-size:1rem;position:relative;z-index:50}
 .logo a,h1.logo a{width:200px;display:block}
 .button{position:relative;display:inline-block;cursor:pointer;outline:0;border:0;margin:20px 0;vertical-align:middle;text-decoration:none;background:transparent;padding:0;font-size:inherit;font-family:inherit;border-radius:1.625rem;background-color:#3689b4}
+.button.herobtn{background-color:rgba(255,255,255,0.3)}
 .button .action{width:15rem;height:auto}
 .button .action .circle{-webkit-transition:all .45s cubic-bezier(0.65,0,0.076,1);transition:all .45s cubic-bezier(0.65,0,0.076,1);position:relative;margin:0;width:3rem;height:3rem;background:rgba(255,255,255,0.1);border-radius:1.625rem}
 .button .action .circle.hero{background:#f37748}
@@ -1710,6 +1711,7 @@ section.work a.third{height:200px}
 .wrapper{width:90%;padding:0}
 .herowrap{padding:0}
 #masthead{padding:50px 0}
+.button.herobtn{margin-right:20px}
 #leadmagnet{width:60%}
 .home-flex section.image img{bottom:-100px;right:10%}
 section.hero{width:70%;text-align:left;margin:0 0 0 5%}

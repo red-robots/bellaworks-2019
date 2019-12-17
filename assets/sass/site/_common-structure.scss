@@ -132,6 +132,12 @@ body {
   font-family: inherit;
   border-radius: 1.625rem;
   background-color: rgba($color-light-blue, 1 );
+  &.herobtn {
+  	background-color: rgba(#fff, .3);
+  	@media screen and (min-width: $deskwidth) {
+	  	margin-right: 20px;
+	}
+  }
   .action {
     width: 15rem;
     height: auto;

@@ -107,13 +107,23 @@ src="https://www.facebook.com/tr?id=1107124109368587&ev=PageView&noscript=1"
 							wp_reset_postdata(); ?>
 						<h2><?php echo $herotext; ?></h2>
 						<h3><?php echo $herosmall; ?></h3>
-						<div class="button">
+						<div class="button herobtn">
 							<div class="action">
 							<a href="<?php bloginfo('url'); ?>/lets-do-this">	
 								<div class="circle hero wow bounceIn" data-wow-delay="1s">
 							      <span class="icon arrow"></span>
 							    </div>
 								<p class="button-text">Get a Quote</p>
+							</a>
+							</div>
+						</div>
+						<div class="button herobtn">
+							<div class="action">
+							<a href="<?php bloginfo('url'); ?>/our-work/">	
+								<div class="circle hero wow bounceIn" data-wow-delay="1s">
+							      <span class="icon arrow"></span>
+							    </div>
+								<p class="button-text">See Our Work</p>
 							</a>
 							</div>
 						</div>
