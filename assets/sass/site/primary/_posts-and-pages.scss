@@ -1036,6 +1036,7 @@ section.latest-news {
 			display: block;
 			@include transition(all ease .2s);
 			padding: 5%;
+			height: 100%;
 			&:hover {
 				@include boxshadow();
 			}
