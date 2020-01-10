@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
-
+			<div class="wrapper">
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -21,28 +21,45 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			<section class="news">
 			<?php
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post(); ?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				<div class="third js-blocks blogpost">
+					<div class="image">
+						<a href="<?php the_permalink(); ?>" >
+							<?php the_post_thumbnail('blog'); ?>
+						</a>
+					</div>
+					<div class="content">
+						<h2 class="js-titles">
+							<a href="<?php the_permalink(); ?>" >
+								<?php the_title(); ?>
+							</a>
+						</h2>
+						<footer class="post">
+							<div class="date">
+								<?php the_date(); ?>
+							</div>
+							<div class="category">
+								<?php the_category(); ?>
+							</div>
+						</footer>
+					</div>	
+				</div>
 
-			endwhile;
+			<?php endwhile;
 
-			the_posts_navigation();
+			pagi_posts_nav();
 
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+			</section>
+	</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

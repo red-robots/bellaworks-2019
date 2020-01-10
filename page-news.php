@@ -28,7 +28,7 @@ get_header(); ?>
 			if ($wp_query->have_posts()) :  ?>
 				<section class="news">
 					<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>	
-						<div class="third js-blocks">
+						<div class="third js-blocks blogpost">
 							<div class="image">
 								<a href="<?php the_permalink(); ?>" >
 									<?php the_post_thumbnail('blog'); ?>
