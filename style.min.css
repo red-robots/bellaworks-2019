@@ -1611,7 +1611,7 @@ section.latest-news h2{padding:0 0 20px 0;width:100%}
 section.latest-news .newsblock{width:90%;background-color:#fff;margin:10px auto;text-align:left;-webkit-transition:all ease .2s;transition:all ease .2s}
 section.latest-news .newsblock a{display:block;-webkit-transition:all ease .2s;transition:all ease .2s;padding:5%;height:100%}
 section.latest-news .newsblock a:hover{-webkit-box-shadow:0 0 13px 0 rgba(0,0,0,0.21);box-shadow:0 0 13px 0 rgba(0,0,0,0.21)}
-.blogpost{background-color:#fff;-webkit-transition:all ease .4s;transition:all ease .4s}
+.blogpost{background-color:#fff;-webkit-transition:all ease .4s;transition:all ease .4s;overflow:hidden}
 .blogpost:hover{-webkit-box-shadow:0 0 27px 3px rgba(0,0,0,0.1);box-shadow:0 0 27px 3px rgba(0,0,0,0.1)}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}

@@ -1057,6 +1057,7 @@ section.latest-news {
 .blogpost {
 	background-color: #fff;
 	@include transition(all ease .4s);
+	overflow: hidden;
 	&:hover {
 		@include shadowhover();
 	}
