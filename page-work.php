@@ -62,28 +62,7 @@ get_header(); ?>
 			endif;
 			 ?>
 
-			 <section class="our-clients">
-			 	<h3>Some of our clients.</h3>
-			 	<?php 
-			 	// specific post ID you want to pull
-				$post = get_post(2325); 
-				setup_postdata( $post );
-
-					if( have_rows('clients') ) : while( have_rows('clients') ) : the_row();
-						$client = get_sub_field('client');
-						$clientLink = get_sub_field('link');
-					?>
-						<div class="client">
-							<a href="<?php echo $clientLink; ?>">
-							<img src="<?php echo $client['url']; ?>"  alt="<?php echo $client['alt']; ?>">
-							</a>
-						</div>
-					<?php 
-					endwhile;
-					endif;
-				wp_reset_postdata();
-				?>
-			 </section>	
+			 <?php get_template_part('template-parts/our-clients'); ?>
 
 			 <?php get_template_part('template-parts/are-you-ready'); ?>
 

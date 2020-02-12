@@ -36,13 +36,97 @@ get_header(); ?>
 			endif; ?>
 
 
+
+			<section class="benefits">
+				<h2>Why Bellaworks?<br><span class="smaller">Because you want:</span></h2>
+				
+				<div class="bene even js-blocks">
+					<h3>A Strategic Partner</h3>
+					<ul>
+						<li>
+							Before we talk about design, we will talk about your company - your unique value, your audiences, and goals.  An understanding of “the big picture” will guide our work.
+						</li>
+						<li>
+							We will offer solutions to address your challenges and opportunities, saving you time and money.
+						</li>
+					</ul>
+				</div>
+				<div class="bene odd js-blocks">
+					<h3>Custom Digital Solutions</h3>
+					<ul>
+						<li>
+							Bring out the best in your business and your brand with a custom website.
+						</li>
+						<li>
+							Implement digital solutions that save time and money.
+						</li>
+						<li>
+							Allow flexibility for the future by building on a WordPress platform.
+						</li>
+					</ul>
+				</div>
+				<div class="bene odd js-blocks">
+					<h3>A Smooth Process</h3>
+					<ul>
+						<li>
+							You know your business, and we know websites.  Let’s collaborate and create your best website.
+						</li>
+						<li>
+							Our small but mighty team works directly with you.  No layers of agency management here. 
+						</li>
+						<li>
+							All work is done in-house.  We control the process and ensure quality.
+						</li>
+					</ul>
+				</div>
+				<div class="bene even js-blocks">
+					<h3>Flexibility WIth Maintenance</h3>
+					<ul>
+						<li>
+							Want to make your own website content updates?  Super, we will train you.
+						</li>
+						<li>
+							Want control over your website files?  You will own your files. 
+						</li>
+						<li>
+							Need a website partner to handle hosting?  Got you covered.
+						</li>
+						<li>
+							We have been in business over ten years and will be here to serve you long after your project wraps up.
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+
+
 			
 
 			<section class="secondary-hero fadeInUp wow">
 				
-				<section class="getitright">
-					<h2><?php echo $second_block_copy_lead; ?></h2>
-					<?php echo $second_block_copy; ?>
+				<!-- <section class="getitright"> -->
+					<section class="secret">
+					<!-- <h2><?php echo $second_block_copy_lead; ?></h2>
+					<?php echo $second_block_copy; ?> -->
+					<h2>The secret to a great website?</h2>
+					  <span class="q">
+					  	It starts by answering…</span> <br>
+						<span class="a">What are you insanely proud of that your company does really well? What’s your unique value and who is it valuable to?</span>
+					  
+						<!-- <span class="a"></span> -->
+						<p>
+							We know you know the answer.  Putting this into words, logo, branding, and design in order to connect with your audiences the challenge. We’re here to help.
+						</p>
+						<p>
+							A website project begins with getting to the very core of your business and understanding your unique value.
+						</p>
+						<p>
+							Your unique value is where “the good stuff is.”  Pinpointing your value will set you apart from your competitors and will drive your brand.
+						</p>
+
+ 
+
+
 				</section>
 			</section>
 
@@ -54,12 +138,33 @@ get_header(); ?>
 						<div class="paper">
 							<img src="<?php bloginfo('template_url'); ?>/images/a-great-website-starts-here.png">
 						</div>
-						<div class="copy">
-							<?php get_template_part('template-parts/offer'); ?>
+						<div class="copy downloadsec">
+							<?php //get_template_part('template-parts/offer'); ?>
+							<p class="co">Learn more about how your content is the key to your best website.</p>
+							<p class="co">Download Content That Connects</p>
+							<div class="button">
+								<div class="action">
+									<a class="inline cboxElement" href="#leadmagnet"></a>
+									<div class="circle">
+										<span class="icon arrow"></span>
+									</div>
+									<p class="button-text blue">Get It Now</p>
+								</div>
+
+							</div>
+							
+							<p class="co">
+							And Let’s Build Your Best Website
+							</p>
 						</div>
 					</div>
 					
 				</section>
+
+				<?php get_template_part('template-parts/our-clients'); ?>
+
+
+				<?php get_template_part('template-parts/testimonials'); ?>
 			
 			<section class="latest-news">
 				<h2 class="home-service">Latest News</h2>

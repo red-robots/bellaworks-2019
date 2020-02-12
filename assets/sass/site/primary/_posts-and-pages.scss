@@ -8,9 +8,11 @@
 	margin: 0;
 	position: relative;
 	background-image: url(images/cityscape.png);
-		background-size: cover;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom right;
 	@media screen and (min-width: $tabwidth) {
-		
+		background-size: cover;
 	}
 	@media screen and (min-width: $deskwidth) {
 
@@ -423,6 +425,81 @@ section.secondary-hero {
 			line-height: 1.1;
 		}
 	}
+	section.secret {
+		width: 100%;
+		position: relative;
+		float: left;
+		h2 {
+			font-size: 2.0rem;
+			margin: 0 0 40px 0;
+			@media screen and (min-width: $tabwidth) {
+				font-size: 2.2rem;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 2.5rem;
+			}
+		}
+		.q {
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			@media screen and (min-width: $tabwidth) {
+				font-size: 1.3rem;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 1.5rem;
+			}
+		}
+		.a {
+			font-size: 2rem;
+			padding: 30px 0;
+			border-top: 2px solid #8f9598;
+			border-bottom: 2px solid #8f9598;
+			margin: 0 0 20px 0;
+			display: block;
+			font-weight: normal;
+			@media screen and (min-width: $tabwidth) {
+
+			}
+			@media screen and (min-width: $deskwidth) {
+
+			}
+		}
+		@media screen and (min-width: $tabwidth) {
+			// width: 45%;
+			width: 85%;
+			padding: 30px 0;
+			margin: 5% auto;
+			// border-bottom: 1px solid $color-mandarin;
+			h2 {
+				font-size: 2.5rem;
+			}
+			.q {
+				font-size: 1.5rem;
+			}
+			.a {
+				font-size: 2rem;
+			}
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 20px 0 20px 0; 
+			width: 55%;
+			text-align: justify;
+  			text-justify: inter-word;
+  			h2 {
+				font-size: 2.5rem;
+			}
+			.q {
+				font-size: 1.5rem;
+			}
+			.a {
+				font-size: 2rem;
+			}
+		}
+		p {
+			margin: 0 0 20px 0;
+			line-height: 1.1;
+		}
+	}
 	
 	.icon {
 		width: 80%;
@@ -525,6 +602,11 @@ section.offer {
 	}
 	p {
 		color: $color-davy-grey;
+	}
+	.downloadsec {
+		p.co {
+			font-size: 1.6rem;
+		}
 	}
 	h3 {
 		font-size: 1.8rem;
@@ -1060,6 +1142,128 @@ section.latest-news {
 	overflow: hidden;
 	&:hover {
 		@include shadowhover();
+	}
+}
+section.benefits {
+	width: 100%;
+	padding: 5% 0;
+	h2 {
+		width: 100%;
+		text-align: center;
+		font-size: 2.0em;
+		padding: 0 0 60px 0;
+		color: $color-dark-blue;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 2.3em;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 2.9em;
+		}
+		.smaller {
+			font-size: 2rem;
+		}
+	}
+	h3 {
+		width: 100%;
+		font-size: 1.4em;
+		padding: 0 0 20px 0;
+		color: $color-dark-blue;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 1.6em;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 1.8em;
+		}
+	}
+	.bene {
+		width: 100%;
+		padding: 20px;
+		float: left;
+		&:nth-child(odd) {
+		    background-color: #efefef;
+		}
+		&:nth-child(even) {
+		    
+		}
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+			padding: 5%;
+			&.odd {
+				background-color: #efefef;
+			}
+			&.even {
+				background-color: #fff;
+			}
+		}
+	}
+	ol {
+		width: 100%;
+		float: left;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			padding: 20px;
+			
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: disc;
+		list-style-position: inside;
+		overflow: visible;
+		li {
+			margin: 0;
+			padding: 0 0 0 20px;
+			font-size: 1.3rem;
+			margin: 0 0 15px 0;
+		}
+	}
+}
+section.testis {
+	width: 100%;
+	
+	padding: 60px 5%;
+	@media screen and (min-width: $tabwidth) {
+		 
+	}
+	h2 {
+		font-size: 2rem;
+		width: 100%;
+		text-align: center;
+		padding: 40px 0;
+	}
+	.testi {
+		width: 90%;
+		margin: 20px auto;
+		background-color: #fff;
+		@include  boxshadow();
+		@include transition(all ease .2s);
+		padding: 20px;
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
+			margin: auto;
+			flex-basis: 28%;
+		}
+		&:hover {
+			@include  shadowhover();
+		}
+		.names {
+			margin: 20px 0;
+			font-weight: bold;
+		}
+	}
+	.testflex {
+		@media screen and (min-width: $tabwidth) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 }
 

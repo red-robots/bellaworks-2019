@@ -1484,7 +1484,7 @@ ul.side-social a:hover,ul.side-social i:hover{color:#4e5356}
 #leadmagnet .gform_button:hover{background-color:#fff}
 .sitemap a{color:rgba(255,255,255,0.5)}
 .sticky{display:block}
-.home-banner{width:100%;height:100vh;background-color:#3689b4;margin:0;position:relative;background-image:url(images/cityscape.png);background-size:cover}
+.home-banner{width:100%;height:100vh;background-color:#3689b4;margin:0;position:relative;background-image:url(images/cityscape.png);background-size:contain;background-repeat:no-repeat;background-position:bottom right}
 .home-banner .hinter{width:100%;text-align:center;width:100%;float:left;color:#fff;height:10vh;font-size:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;clear:both;display:none}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -1518,6 +1518,11 @@ section.secondary-hero section.icon{width:100%;position:relative;float:left}
 section.secondary-hero section.desc{width:100%;position:relative;float:left}
 section.secondary-hero section.getitright{width:100%;position:relative;float:left}
 section.secondary-hero section.getitright p{margin:0 0 20px 0;line-height:1.1}
+section.secondary-hero section.secret{width:100%;position:relative;float:left}
+section.secondary-hero section.secret h2{font-size:2rem;margin:0 0 40px 0}
+section.secondary-hero section.secret .q{font-size:1.2rem;text-transform:uppercase}
+section.secondary-hero section.secret .a{font-size:2rem;padding:30px 0;border-top:2px solid #8f9598;border-bottom:2px solid #8f9598;margin:0 0 20px 0;display:block;font-weight:normal}
+section.secondary-hero section.secret p{margin:0 0 20px 0;line-height:1.1}
 section.secondary-hero .icon{width:80%;margin:auto}
 section.secondary-hero .icon img{width:100%}
 section.about-what-we-do{width:100%;float:left;padding:30px 0 100px 0}
@@ -1535,6 +1540,7 @@ ul.servlist a:hover svg{right:5px}
 ul.servlist a svg{width:auto;position:absolute;right:10px;-webkit-transition:all ease .3s;transition:all ease .3s;top:10px}
 section.offer{width:100%;position:relative;float:right;background-color:#fff;padding:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 section.offer p{color:#4e5356}
+section.offer .downloadsec p.co{font-size:1.6rem}
 section.offer h3{font-size:1.8rem;color:#002c4c;margin:0 0 15px 0}
 .the-pitch{width:100%;margin:0 auto}
 .the-pitch .paper{width:40%;margin:20px auto}
@@ -1613,6 +1619,21 @@ section.latest-news .newsblock a{display:block;-webkit-transition:all ease .2s;t
 section.latest-news .newsblock a:hover{-webkit-box-shadow:0 0 13px 0 rgba(0,0,0,0.21);box-shadow:0 0 13px 0 rgba(0,0,0,0.21)}
 .blogpost{background-color:#fff;-webkit-transition:all ease .4s;transition:all ease .4s;overflow:hidden}
 .blogpost:hover{-webkit-box-shadow:0 0 27px 3px rgba(0,0,0,0.1);box-shadow:0 0 27px 3px rgba(0,0,0,0.1)}
+section.benefits{width:100%;padding:5% 0}
+section.benefits h2{width:100%;text-align:center;font-size:2em;padding:0 0 60px 0;color:#002c4c}
+section.benefits h2 .smaller{font-size:2rem}
+section.benefits h3{width:100%;font-size:1.4em;padding:0 0 20px 0;color:#002c4c}
+section.benefits .bene{width:100%;padding:20px;float:left}
+section.benefits .bene:nth-child(odd){background-color:#efefef}
+section.benefits ol{width:100%;float:left;columns:2;-webkit-columns:2;-moz-columns:2;margin:0;padding:0}
+section.benefits ol li{display:inline-block;padding:20px}
+section.benefits ul{margin:0;padding:0;list-style:disc;list-style-position:inside;overflow:visible}
+section.benefits ul li{margin:0;padding:0 0 0 20px;font-size:1.3rem;margin:0 0 15px 0}
+section.testis{width:100%;padding:60px 5%}
+section.testis h2{font-size:2rem;width:100%;text-align:center;padding:40px 0}
+section.testis .testi{width:90%;margin:20px auto;background-color:#fff;-webkit-box-shadow:0 0 13px 0 rgba(0,0,0,0.21);box-shadow:0 0 13px 0 rgba(0,0,0,0.21);-webkit-transition:all ease .2s;transition:all ease .2s;padding:20px}
+section.testis .testi:hover{-webkit-box-shadow:0 0 27px 3px rgba(0,0,0,0.1);box-shadow:0 0 27px 3px rgba(0,0,0,0.1)}
+section.testis .testi .names{margin:20px 0;font-weight:bold}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
@@ -1671,6 +1692,7 @@ ul.footer-social,ul.side-social{-webkit-box-pack:start;-ms-flex-pack:start;justi
 ul.footer-social li,ul.side-social li{margin:0 1.24615em 0 0}
 ul.side-social li{margin:0 .8em 0 0}
 #leadmagnet{width:80%;margin:auto}
+.home-banner{background-size:cover}
 .home-banner .hinter{position:absolute;bottom:0;left:0;display:block}
 .colflex{height:65%}
 .home-flex{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0}
@@ -1684,6 +1706,12 @@ section.secondary-hero h2{font-size:1.8rem}
 section.secondary-hero section.icon{width:30%;padding:30px}
 section.secondary-hero section.desc{width:50%;padding:30px}
 section.secondary-hero section.getitright{width:85%;padding:30px 0;margin:5% auto;border-bottom:1px solid #f37748}
+section.secondary-hero section.secret h2{font-size:2.2rem}
+section.secondary-hero section.secret .q{font-size:1.3rem}
+section.secondary-hero section.secret{width:85%;padding:30px 0;margin:5% auto}
+section.secondary-hero section.secret h2{font-size:2.5rem}
+section.secondary-hero section.secret .q{font-size:1.5rem}
+section.secondary-hero section.secret .a{font-size:2rem}
 section.about-what-we-do .icon{width:30%}
 section.offer{padding:30px}
 .the-pitch{width:75%}
@@ -1701,6 +1729,13 @@ section.services::before{position:absolute;top:0;bottom:0;left:33.33333%;display
 section.services .service-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 section.latest-news .newswrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 section.latest-news .newsblock{width:28%;margin:2%}
+section.benefits h2{font-size:2.3em}
+section.benefits h3{font-size:1.6em}
+section.benefits .bene{width:50%;padding:5%}
+section.benefits .bene.odd{background-color:#efefef}
+section.benefits .bene.even{background-color:#fff}
+section.testis .testi{width:auto;margin:auto;-ms-flex-preferred-size:28%;flex-basis:28%}
+section.testis .testflex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 }@media screen and (min-width:900px){.home-flex section.image img{bottom:-80px;right:10%}
 section.hero h2{font-size:3.3rem}
 section.hero h3{font-size:1.6rem}
@@ -1725,9 +1760,17 @@ section.secondary-hero p{margin:0 auto}
 section.secondary-hero section.icon{padding:50px}
 section.secondary-hero section.desc{padding:50px}
 section.secondary-hero section.getitright{padding:20px 0 20px 0;width:55%;text-align:justify;text-justify:inter-word}
+section.secondary-hero section.secret h2{font-size:2.5rem}
+section.secondary-hero section.secret .q{font-size:1.5rem}
+section.secondary-hero section.secret{padding:20px 0 20px 0;width:55%;text-align:justify;text-justify:inter-word}
+section.secondary-hero section.secret h2{font-size:2.5rem}
+section.secondary-hero section.secret .q{font-size:1.5rem}
+section.secondary-hero section.secret .a{font-size:2rem}
 section.offer{padding:80px 0}
 section.offer h3{margin:0 auto}
 section.work a.third{height:280px}
+section.benefits h2{font-size:2.9em}
+section.benefits h3{font-size:1.8em}
 }@media screen and (min-width:1500px){.home-flex section.image img{bottom:-100px;right:10%}
 section.work a.third{height:340px}
 }@media screen and (min-width:1700px){.home-flex section.image img{bottom:-130px;right:10%}
