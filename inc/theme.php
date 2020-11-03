@@ -6,6 +6,45 @@
  *
  * @package ACStarter
  */
+// add_action('wp_head', 'ac_my_security_headers');
+// function ac_my_security_headers() 
+/*-------------------------------------
+
+  Content Security Policy
+
+---------------------------------------*/
+header('Content-Security-Policy: default-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https: data:');
+/*-------------------------------------
+
+  X-Frame-Options
+
+---------------------------------------*/
+header('X-Frame-Options: SAMEORIGIN');
+/*-------------------------------------
+
+  X-XSS-Protection and X-Content-Type-Options
+
+---------------------------------------*/
+header('X-XSS-Protection: 1; mode=block');
+header('X-Content-Type-Options: nosniff');
+/*-------------------------------------
+
+  HTTP Strict Transport Security (HSTS)
+
+---------------------------------------*/
+header('Strict-Transport-Security:max-age=31536000; includeSubdomains; preload');
+/*-------------------------------------
+
+  Implement Cookie with HTTPOnly and Secure flag in WordPress
+
+---------------------------------------*/
+@ini_set('session.cookie_httponly', true);
+@ini_set('session.cookie_secure', true);
+@ini_set('session.use_only_cookies', true);
+
+
+// End Security Stuff
+
 
 /*-------------------------------------
 
