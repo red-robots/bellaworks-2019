@@ -29,7 +29,7 @@
     connect-src 'none' ;
     child-src 'none' ; 
     object-src 'none' ;
-    frame-ancestors'none' ; ">
+    frame-ancestors 'none' ; ">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
