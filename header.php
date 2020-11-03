@@ -12,24 +12,58 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
 
-    font-src 'self' https://fonts.googleapis.com 
-                    https://fonts.gstatic.com ;
+    font-src 'self' 
+    				https://fonts.googleapis.com 
+                    https://fonts.gstatic.com
+                    https://use.typekit.net
+                    https://p.typekit.net
+                    https://use.fontawesome.com
+                    http://localhost:8888/bellaworks/bellaworks/site ;
 
     img-src 'self' 'unsafe-inline' 
-                    bellaworksweb.com  ;
+                    https://www.bellaworksweb.com 
+                    https://bellaworksweb.com
+                    https://secure.gravatar.com
+                    http://0.gravatar.com
+                    https://use.fontawesome.com
+                    http://localhost:8888/bellaworks/bellaworks/site  ;
 
     style-src 'self' 'unsafe-inline' 
-                    https://fonts.googleapis.com ;
+                    https://fonts.googleapis.com 
+                    https://use.typekit.net
+                    http://localhost:8888/bellaworks/bellaworks/site	;
 
     script-src      https://www.bellaworksweb.com 
-                    https://bellaworksweb.com  ; 
+                    https://bellaworksweb.com
+                    https://ajax.googleapis.com
+                    https://use.fontawesome.com
+                    http://localhost:8888/bellaworks/bellaworks/site  ;
+
+    manifest-src    'self'
+    				https://www.bellaworksweb.com 
+                    https://bellaworksweb.com
+                    http://localhost:8888/bellaworks/bellaworks/site ; 
+
+    script-src-elem	'self' 
+    				https://www.bellaworksweb.com 
+                    https://bellaworksweb.com
+                    https://ajax.googleapis.com
+                    https://use.fontawesome.com
+                    http://localhost:8888/bellaworks/bellaworks/site ;
+
+    style-src-elem 'self'
+    				https://p.typekit.net
+    				https://use.fontawesome.com
+    				https://fonts.googleapis.com
+    				https://use.typekit.net
+    				https://fonts.googleapis.com ;
 
     connect-src 'none' ;
     child-src 'none' ; 
     object-src 'none' ;
-    frame-ancestors 'none' ; ">
+    frame-ancestors 'none' ; "> -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
