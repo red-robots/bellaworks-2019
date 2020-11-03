@@ -12,6 +12,23 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; 
+
+    font-src 'self' https://fonts.googleapis.com 
+                    https://fonts.gstatic.com ;
+
+    img-src 'self' 'unsafe-inline' 
+                    bellaworksweb.com  ;
+
+    style-src 'self' 'unsafe-inline' 
+                    https://fonts.googleapis.com ;
+
+    script-src      https://www.bellaworksweb.com 
+                    https://bellaworksweb.com  ; 
+
+    connect-src 'none' ;
+    child-src 'none' ; 
+    object-src 'none' ;">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">

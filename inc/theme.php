@@ -7,13 +7,15 @@
  * @package ACStarter
  */
 // add_action('wp_head', 'ac_my_security_headers');
-// function ac_my_security_headers() 
+// function ac_my_security_headers() {
+//   echo <meta http-equiv="Content-Security-Policy" content="default-src 'none' ;" >
+// }
 /*-------------------------------------
 
   Content Security Policy
 
 ---------------------------------------*/
-header('Content-Security-Policy: default-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https: data:');
+//header('Content-Security-Policy: default-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https: data:');
 /*-------------------------------------
 
   X-Frame-Options
